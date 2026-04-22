@@ -152,6 +152,21 @@ body{font-family:'Noto Sans JP',sans-serif;background:var(--cream);color:var(--t
 .ss-chip:hover{border-color:var(--accent-green);color:var(--accent-green)}
 .ss-chip.sel{background:var(--accent-green);color:var(--white);border-color:var(--accent-green)}
 .soshitsu-confirm-btn{display:block;margin:16px auto 0;background:var(--accent-green);color:var(--white);border:none;border-radius:100px;font-family:'Zen Maru Gothic',sans-serif;font-size:14px;font-weight:700;padding:11px 28px;cursor:pointer;box-shadow:0 4px 14px rgba(74,154,90,.3)}
+.shonin-card{display:none;background:linear-gradient(135deg,#EEF4FF 0%,#E8F0FF 60%,#F0E8FF 100%);border:2px solid #5B7FA6;border-radius:var(--radius);padding:22px 24px;margin-bottom:20px}
+.shonin-card.show{display:block}
+.shonin-card-eyebrow{font-size:11px;font-weight:700;color:#5B7FA6;letter-spacing:.1em;margin-bottom:8px}
+.shonin-card-catchcopy{font-family:'Zen Maru Gothic',sans-serif;font-size:15px;font-weight:700;color:#2D3E6A;line-height:1.7;margin-bottom:14px}
+.shonin-card-sports{display:flex;flex-direction:column;gap:10px}
+.shonin-sport-row{background:rgba(255,255,255,.75);border-radius:var(--radius-sm);padding:12px 14px;border-left:4px solid #5B7FA6}
+.shonin-sport-name{font-family:'Zen Maru Gothic',sans-serif;font-size:13px;font-weight:700;color:#2D3E6A;margin-bottom:4px}
+.shonin-sport-reason{font-size:11px;color:#5A6A8A;line-height:1.65}
+.kotoba-advice{display:none;background:linear-gradient(135deg,#FFF9E8 0%,#FFFBE8 100%);border:2px solid #F5C842;border-radius:var(--radius);padding:20px 22px;margin-bottom:20px}
+.kotoba-advice.show{display:block}
+.kotoba-advice-title{font-family:'Zen Maru Gothic',sans-serif;font-size:14px;font-weight:700;color:#8B6200;margin-bottom:10px;display:flex;align-items:center;gap:8px}
+.kotoba-advice-body{font-size:13px;color:#5A4200;line-height:1.85}
+.kotoba-advice-body strong{color:#8B3A00}
+.kotoba-chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px}
+.kotoba-chip{background:#F5C842;color:#5A3A00;border-radius:100px;font-size:11px;font-weight:700;padding:4px 12px}
 .best3-section{background:linear-gradient(135deg,#FFF0E0 0%,#E8F0FF 100%);border-radius:var(--radius);padding:28px;margin-bottom:20px;border:2px solid var(--accent)}
 .best3-title{font-family:'Zen Maru Gothic',sans-serif;font-size:20px;font-weight:700;color:var(--text-dark);text-align:center;margin-bottom:6px}
 .best3-sub{font-size:12px;color:var(--text-mid);text-align:center;margin-bottom:20px}
@@ -196,6 +211,27 @@ body{font-family:'Noto Sans JP',sans-serif;background:var(--cream);color:var(--t
 .btn-buy{display:inline-flex;align-items:center;gap:8px;background:#FF9900;color:var(--white);font-family:'Zen Maru Gothic',sans-serif;font-size:15px;font-weight:700;padding:13px 28px;border-radius:100px;border:none;cursor:pointer;transition:all .15s;text-decoration:none;box-shadow:0 4px 16px rgba(255,153,0,.35)}
 .btn-buy:hover{background:#E68A00;transform:translateY(-1px)}
 .btn-buy-sub{display:block;font-size:11px;color:var(--text-light);margin-top:8px}
+.email-lock-banner{background:linear-gradient(135deg,#f8f9ff,#f0f4ff);border:1.5px dashed #5B7FA6;border-radius:var(--radius);padding:16px;text-align:center;margin:16px 0}
+.email-lock-icon{font-size:24px;margin-bottom:6px}
+.email-lock-text{font-size:12px;color:#5B7FA6;line-height:1.7;font-weight:600}
+.email-preview-blur{filter:blur(4px);pointer-events:none;user-select:none;opacity:.6;max-height:80px;overflow:hidden}
+.email-cta-btn{display:block;margin:18px auto 0;background:linear-gradient(135deg,#5B7FA6,#4A9A5A);color:var(--white);font-family:'Zen Maru Gothic',sans-serif;font-size:15px;font-weight:700;padding:14px 32px;border-radius:100px;border:none;cursor:pointer;box-shadow:0 4px 16px rgba(74,120,160,.35);transition:transform .15s}
+.email-cta-btn:hover{transform:translateY(-2px)}
+.email-modal-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,.55);z-index:1000;align-items:center;justify-content:center}
+.email-modal-overlay.open{display:flex}
+.email-modal{background:var(--white);border-radius:var(--radius);padding:32px 28px;max-width:540px;width:90%;max-height:85vh;overflow-y:auto;box-shadow:0 12px 48px rgba(0,0,0,.2);position:relative}
+.email-modal-close{position:absolute;top:14px;right:18px;background:none;border:none;font-size:22px;cursor:pointer;color:var(--text-light)}
+.email-modal-title{font-family:'Zen Maru Gothic',sans-serif;font-size:18px;font-weight:700;color:var(--text-dark);margin-bottom:6px}
+.email-modal-sub{font-size:12px;color:var(--text-mid);margin-bottom:18px}
+.email-detail-card{background:var(--peach);border-radius:var(--radius-sm);padding:16px 18px;margin-bottom:14px;font-size:13px;line-height:1.8;color:var(--text-dark)}
+.email-detail-card strong{color:var(--accent)}
+.email-detail-card .detail-title{font-family:'Zen Maru Gothic',sans-serif;font-size:14px;font-weight:700;color:var(--warm-brown);margin-bottom:8px}
+.email-input-row{display:flex;gap:8px;margin-top:16px}
+.email-input{flex:1;padding:11px 14px;border:1.5px solid var(--blush);border-radius:var(--radius-sm);font-size:14px;font-family:'Noto Sans JP',sans-serif;outline:none}
+.email-input:focus{border-color:var(--accent)}
+.email-send-btn{background:var(--accent);color:var(--white);border:none;border-radius:var(--radius-sm);font-family:'Zen Maru Gothic',sans-serif;font-size:13px;font-weight:700;padding:11px 20px;cursor:pointer;white-space:nowrap}
+.email-send-btn:hover{background:#d9632a}
+.email-sent-msg{display:none;text-align:center;padding:16px;color:var(--accent-green);font-weight:700;font-size:14px}
 footer{background:var(--text-dark);color:rgba(255,255,255,.5);text-align:center;padding:24px 32px;font-size:12px}
 footer span{color:rgba(255,255,255,.8);font-family:'Zen Maru Gothic',sans-serif}
 @media(max-width:560px){
@@ -218,7 +254,7 @@ footer span{color:rgba(255,255,255,.8);font-family:'Zen Maru Gothic',sans-serif}
   <div class="hero-eyebrow">✨ ビッグファイブ × 多重知能理論による無料診断</div>
   <h1>わが子の<span>「気質×才能」</span>から<br>ベストマッチの習い事を見つけよう</h1>
   <p class="hero-sub">心理学のビッグファイブ理論とガードナーの多重知能理論で、お子さんにぴったりの習い事とスポーツをベスト3でご提案します。</p>
-  <button class="btn-primary" onclick="document.getElementById('quiz').scrollIntoView({behavior:'smooth'})">🧭 無料診断をはじめる（全30問）</button>
+  <button class="btn-primary" onclick="document.getElementById('quiz').scrollIntoView({behavior:'smooth'})">🧭 無料診断をはじめる（全33問）</button>
   <p class="hero-note">登録不要・無料・約5分</p>
   <div class="floats">
     <div class="float-card">🧠 ビッグファイブ理論</div>
@@ -256,7 +292,7 @@ footer span{color:rgba(255,255,255,.8);font-family:'Zen Maru Gothic',sans-serif}
 <section id="quiz" class="quiz-section">
   <div class="quiz-wrap">
     <h2 class="section-title" style="margin-bottom:8px">気質 × 才能 診断スタート</h2>
-    <p class="section-sub" style="margin-bottom:24px">STEP1（気質・10問）→ STEP2（才能・20問）→ 素質チェック → ベスト3発表</p>
+    <p class="section-sub" style="margin-bottom:24px">STEP1（気質・10問）→ STEP2（才能・20問）→ 補助（3問）→ 素質チェック → ベスト3発表</p>
     <div class="quiz-box">
       <div class="quiz-content" id="quizContent">
         <div class="stage-indicator">
@@ -305,8 +341,18 @@ footer span{color:rgba(255,255,255,.8);font-family:'Zen Maru Gothic',sans-serif}
             <div><div class="result-type" id="resultType"></div><div style="margin-top:5px"><span class="result-talent-badge" id="resultTalentBadge"></span></div></div>
           </div>
           <p class="result-desc" id="resultDesc"></p>
+          <!-- 判定根拠バナー -->
+          <div id="judgeBasisBanner" style="margin-top:14px;background:#FFF4EE;border:1.5px solid #FFD0B0;border-radius:12px;padding:12px 16px;text-align:left;max-width:480px;margin-left:auto;margin-right:auto">
+            <div style="font-size:11px;font-weight:500;color:#F07840;letter-spacing:.08em;margin-bottom:5px">📌 この気質と判定された理由</div>
+            <div id="judgeBasisText" style="font-size:13px;color:#5A3A2A;line-height:1.75"></div>
+          </div>
+          <!-- 隣接タイプとの違い（研究者/天才が判定されたときのみ表示） -->
+          <div id="typeDistinctionBox" style="display:none;margin-top:10px;background:#F0F8FF;border:1.5px solid #B8D8FF;border-radius:12px;padding:12px 16px;text-align:left;max-width:480px;margin-left:auto;margin-right:auto">
+            <div style="font-size:11px;font-weight:500;color:#3A6A9A;letter-spacing:.08em;margin-bottom:5px">🔍 似ているタイプとの違い</div>
+            <div id="typeDistinctionText" style="font-size:13px;color:#2A4A6A;line-height:1.75"></div>
+          </div>
         </div>
-        <div class="scores-section"><div class="scores-section-title">🌸 気質スコア（ビッグファイブ）</div><div id="traitScoresDisplay"></div></div>
+        <div class="scores-section"><div class="scores-section-title">🌸 気質タイプ別スコア</div><div id="traitScoresDisplay"></div></div>
         <hr class="divider">
         <div class="scores-section"><div class="scores-section-title">⭐ 才能スコア（多重知能理論）</div><div id="talentScoresDisplay"></div></div>
         <hr class="divider">
@@ -335,7 +381,12 @@ footer span{color:rgba(255,255,255,.8);font-family:'Zen Maru Gothic',sans-serif}
         <div class="best3-section" id="best3Section" style="display:none">
           <div class="best3-title">🏆 わが子の習い事ベスト3</div>
           <div class="best3-sub" id="best3Sub"></div>
+          <div id="best3UxCopy" style="font-size:13px;line-height:1.85;color:var(--text-mid);background:rgba(255,255,255,.75);border-radius:12px;padding:14px 16px;margin-bottom:16px;border-left:4px solid var(--accent);display:none"></div>
           <div class="best3-list" id="best3List"></div>
+          <div style="margin-top:24px;display:flex;flex-direction:column;gap:10px;align-items:center">
+            <button class="email-cta-btn" onclick="openEmailModal()">🔍 詳しい診断結果を見る →</button>
+            <p style="font-size:11px;color:var(--text-mid);margin:0;text-align:center">メールアドレスを登録すると、素質に合わせた<br>詳細コメントと習い事アドバイスが届きます</p>
+          </div>
         </div>
         <div style="margin-top:20px">
           <a class="book-promo" href="https://amzn.asia/d/0bA9O8T4" target="_blank" rel="noopener">
@@ -348,11 +399,7 @@ footer span{color:rgba(255,255,255,.8);font-family:'Zen Maru Gothic',sans-serif}
             </div>
           </a>
         </div>
-        <div class="email-form">
-          <div class="email-form-title">📩 詳しい診断レポートを無料で受け取る</div>
-          <div class="email-form-sub">メールアドレスを登録すると、より詳細な分析レポートをお届けします</div>
-          <div class="email-row"><input class="email-input" type="email" placeholder="example@email.com"/><button class="btn-email">受け取る</button></div>
-        </div>
+
         <button class="retry-btn" onclick="resetQuiz()">もう一度診断する</button>
       </div>
     </div>
@@ -378,6 +425,32 @@ footer span{color:rgba(255,255,255,.8);font-family:'Zen Maru Gothic',sans-serif}
   </div>
 </section>
 
+<!-- メール詳細診断モーダル -->
+<div class="email-modal-overlay" id="emailModalOverlay" onclick="closeEmailModal(event)">
+  <div class="email-modal">
+    <button class="email-modal-close" onclick="closeEmailModal()">✕</button>
+    <div class="email-modal-title">🔍 詳しい診断結果を見る</div>
+    <div class="email-modal-sub">素質に合わせた詳細コメント・習い事アドバイスをお届けします</div>
+    <!-- 登録前：プレビュー（ロック） -->
+    <div id="emailPreviewSection">
+      <div id="emailPreviewContent"></div>
+      <div class="email-lock-banner">
+        <div class="email-lock-icon">🔒</div>
+        <div class="email-lock-text">メールアドレスを登録すると<br>全ての詳細コメントが表示されます</div>
+      </div>
+      <div class="email-input-row">
+        <input class="email-input" type="email" id="emailInput" placeholder="メールアドレスを入力">
+        <button class="email-send-btn" onclick="sendEmail()">登録して見る</button>
+      </div>
+      <div class="email-sent-msg" id="emailSentMsg" style="display:none">✅ 送信しました！</div>
+    </div>
+    <!-- 登録後：全コメント表示 -->
+    <div id="emailDetailSection" style="display:none">
+      <div id="emailDetailContent"></div>
+      <p style="font-size:11px;color:var(--text-mid);text-align:center;margin-top:12px">詳細はメールでもお送りしました 📧</p>
+    </div>
+  </div>
+</div>
 <footer><span>🧭 コドモコンパス</span><br><br>© 2025 コドモコンパス ― 「強み」を生み出す育て方 公式サイト</footer>
 
 <script>
@@ -387,16 +460,26 @@ document.getElementById('bookCoverSmall').src = COVER_IMG;
 document.getElementById('bookCoverLarge').src = COVER_IMG;
 
 const traitQuestions=[
-  {text:"外交的で活発、誰とでもすぐ仲良くなれる",trait:"外向性",reverse:false},
-  {text:"思いやりがあり親切で、やさしい人柄だ",trait:"協調性",reverse:false},
+  // Q1: 開放性（正）― 探究心・好奇心・知的行動
+  {text:"ずば抜けた探究心・好奇心で大人顔負けの知的行動をする",trait:"開放性",reverse:false},
+  // Q2: 誠実性（正）― 真面目・しっかり者・きちんとこなす
   {text:"真面目でしっかり者、きちんと物事をこなす",trait:"誠実性",reverse:false},
-  {text:"情緒が安定していて、落ち着いている",trait:"精神耐性",reverse:false},
-  {text:"好奇心が強く、個性的。知的活動を好む",trait:"開放性",reverse:false},
-  {text:"人見知りで慎重、控えめな人柄だ",trait:"外向性",reverse:true},
-  {text:"友だちと仲良く遊べない、集団行動が苦手だ",trait:"協調性",reverse:true},
+  // Q3: 精神耐性（正）― 情緒安定・穏やか・大人びている
+  {text:"情緒が安定していて、普段は穏やか、年齢より大人びている",trait:"精神耐性",reverse:false},
+  // Q4: 外向性（正）― 外交的・活発・すぐ仲良くなれる
+  {text:"外交的で活発、誰とでもすぐ仲良くなれる",trait:"外向性",reverse:false},
+  // Q5: 協調性（正）― 思いやり・親切・やさしい
+  {text:"思いやりがあり親切で、やさしい人柄だ",trait:"協調性",reverse:false},
+  // Q6: 開放性（逆）― ルーティン好み・変化が苦手（開放性が低い）
+  {text:"ルーティンを好み、環境の変化が苦手だ",trait:"開放性",reverse:true},
+  // Q7: 誠実性（逆）― 衝動的・うっかり者（誠実性が低い）
   {text:"衝動的で考えずに行動するうっかり者だ",trait:"誠実性",reverse:true},
-  {text:"心配性でうろたえやすく、感情の起伏が激しい",trait:"精神耐性",reverse:true},
-  {text:"ルーティンを好み、環境の変化が苦手だ",trait:"開放性",reverse:true}
+  // Q8: 精神耐性（逆）― 心配性・感情表現が豊か（精神耐性が低い）
+  {text:"心配性で「泣く」「怒る」「ぐずる」など感情表現が豊かだ",trait:"精神耐性",reverse:true},
+  // Q9: 外向性（逆）― 人見知り・慎重・控えめ（外向性が低い）
+  {text:"人見知りで慎重、控えめな人柄だ",trait:"外向性",reverse:true},
+  // Q10: 協調性（逆）― 友だちと遊べない・集団行動が苦手（協調性が低い）
+  {text:"友だちと仲良く遊べない、集団行動が苦手だ",trait:"協調性",reverse:true}
 ];
 const talentQuestions=[
   {text:"立体パズル、オセロ、将棋など頭を使う遊びが好き",talent:"STEM"},
@@ -421,80 +504,1166 @@ const talentQuestions=[
   {text:"ごっこ遊び、空想遊び、演じるのが好き",talent:"アート"}
 ];
 const traitOrder=["外向性","協調性","誠実性","精神耐性","開放性"];
+// ── 補助質問（3問）: 天才気質・共感者気質・研究者気質の弁別精度を向上 ──
+// 気質診断10問・才能診断20問の後に挿入し、判定ロジックの補正に使用する
+const subQuestions=[
+  {text:"集団行動や大人数での活動より、一人で取り組む方が力を発揮する",key:"solo",reverse:false},
+  {text:"順位・タイム・点数など数字で結果が出ると、ぐっとやる気が上がる",key:"competitive",reverse:false},
+  {text:"得意なことはずば抜けて優れているが、苦手なことが極端に苦手だと感じる",key:"凸凹",reverse:false}
+];
 const talentOrder=["STEM","言語","運動","音楽","アート"];
 const chart={
-  "外向性":{"STEM":["そろばん・暗算","プログラミング","ボードゲーム（将棋・囲碁・チェス）","科学オリンピック","算数オリンピック"],"言語":["英話・外国語・洋書多読","書道・習字","作文・小説・俳句","詩吟・吟詠","落語・講談"],"運動":["自己競争スポーツ（陸上、空手型、弓道、アーチェリー、射撃、ゴルフ、水泳、テニスなど）"],"音楽":["鍵盤楽器（ピアノ/オルガン）","弦楽器（バイオリン/チェロ）","管楽器（フルート/トランペット）"],"アート":["バレエ・ダンス","絵画・造形・漫画","デザイン・イラスト","華道・生け花","料理・クッキング教室"]},
-  "協調性":{"STEM":["そろばん・暗算","プログラミング","ボードゲーム（将棋・囲碁・チェス）","科学オリンピック","算数オリンピック","株式投資"],"言語":["英話・外国語・洋書多読","書道・習字","作文・小説・俳句","詩吟・吟詠","落語・講談"],"運動":["自己競争スポーツ（陸上、弓道、アーチェリー、ゴルフ、ボーリング、カヌー、スキーなど）"],"音楽":["鍵盤楽器（ピアノ/オルガン）","弦楽器（バイオリン/チェロ）","管楽器（フルート/トランペット）","打楽器（ドラム/太鼓）","声楽・歌","作曲・DTM"],"アート":["絵画・造形・漫画","デザイン・イラスト","動画・アニメ制作","料理・クッキング教室"]},
-  "誠実性":{"STEM":["そろばん・暗算","ボードゲーム（将棋・囲碁・チェス）","eスポーツ","株式投資"],"言語":["競技カルタ","スピーチ・弁論","競技クイズ","英語スピーチ"],"運動":["ガチ競争スポーツ（テニス、卓球、バドミントン、柔道、空手、剣道、フェンシング、レスリングなど）"],"音楽":["鍵盤楽器（ピアノ/オルガン）","弦楽器（バイオリン/チェロ）","管楽器（フルート/トランペット）","打楽器（ドラム/太鼓）","声楽・歌"],"アート":["絵画・造形・漫画","デザイン・イラスト","動画・アニメ制作","バレエ・競技ダンス","ヒップホップダンス"]},
-  "精神耐性":{"STEM":["レゴリーグ","ロボット制作","スカウト活動","eスポーツ"],"言語":["英会話・英語スピーチ","演劇・ドラマ","スピーチ・弁論","競技クイズ"],"運動":["集団競争スポーツ（サッカー、野球、バレーボール、バスケットボール、ラグビー、チアリーディングなど）"],"音楽":["楽器全般（集団で行うもの）","合唱・コーラス","リトミック","マーチングバンド","ブラスバンド","ロックバンド・ジャズバンド"],"アート":["バレエ・チームダンス","演劇・ドラマ","よさこい・伝統芸能・神楽"]},
-  "開放性":{"STEM":["レゴリーグ","ロボット制作","スカウト活動"],"言語":["英会話・英語スピーチ","演劇・ドラマ","スピーチ・弁論","国際交流・ボランティア"],"運動":["表現競争スポーツ（体操、新体操、トランポリン、チームダンス、チアリーディング、フィギュアスケートなど）"],"音楽":["楽器全般（集団で行うもの）","合唱・コーラス","リトミック","マーチングバンド","ブラスバンド","ロックバンド・ジャズバンド"],"アート":["バレエ・チームダンス","演劇・ドラマ","動画・アニメ制作","よさこい・伝統芸能・神楽","料理・クッキング教室"]}
+  // 研究者気質（開放性）: p56-57最終チャート準拠
+  "開放性":{
+    "STEM":["そろばん／暗算","プログラミング","ボードゲーム（将棋・囲碁・チェスなど）","科学オリンピック","算数オリンピック","株式投資"],
+    "言語":["英語／外国語／洋書多読","書道／習字","作文／小説／俳句","詩吟／吟詠","落語／講談","漫才・コント","ディベート"],
+    "運動":["自己競争スポーツ（陸上、弓道、アーチェリー、射撃、ゴルフ、ボーリング、ボート競技、ボルダリング、カヌー、スケート、スキージャンプ、テニス・卓球など身体接触が少ないガチ競争スポーツ）"],
+    "音楽":["鍵盤楽器（ピアノ／オルガン）","弦楽器（バイオリン／チェロ）","管楽器（フルート／トランペット）","打楽器／ドラム","声楽・歌","作曲／DTM"],
+    "アート":["絵画／造形／漫画","デザイン／イラスト","動画／アニメ制作","料理／クッキング教室"]
+  },
+  // 天才気質（精神耐性低）: p56-57最終チャート準拠 ※研究者と同系統だが運動・アートが異なる
+  "精神耐性":{
+    "STEM":["そろばん／暗算","プログラミング","ボードゲーム（将棋・囲碁・チェスなど）","科学オリンピック","算数オリンピック"],
+    "言語":["英語／外国語／洋書多読","書道／習字","作文／小説／俳句","詩吟／吟詠","落語／講談","漫才・コント","ディベート"],
+    "運動":["自己競争スポーツ（陸上、空手型、弓道、アーチェリー、射撃、ゴルフ、ボーリング、ボート競技、ボルダリング、水泳、テニス・卓球など身体接触が少ないガチ競争スポーツ）"],
+    "音楽":["鍵盤楽器（ピアノ／オルガン）","弦楽器（バイオリン／チェロ）","管楽器（フルート／トランペット）","打楽器","声楽・歌"],
+    "アート":["バレエ／ダンス","絵画／造形／漫画","デザイン／イラスト","華道／生け花","料理／クッキング教室"]
+  },
+  // 商人気質（誠実性）: p56-57最終チャート準拠
+  "誠実性":{
+    "STEM":["そろばん／暗算","ボードゲーム（将棋・囲碁・チェスなど）","eスポーツ","株式投資"],
+    "言語":["競技かるた","スピーチ／弁論","競技クイズ","英語スピーチ","落語／講談","漫才・コント","ディベート"],
+    "運動":["ガチ競争スポーツ（テニス、卓球、バドミントン、柔道、空手、剣道、相撲、なぎなた、フェンシング、レスリング、柔術、少林寺拳法、ムエタイ、キックボクシング、ボクシングなど）"],
+    "音楽":["鍵盤楽器（ピアノ／オルガン）","弦楽器（バイオリン／チェロ）","管楽器（フルート／トランペット）","打楽器（ドラム／太鼓）","声楽・歌"],
+    "アート":["絵画／造形／漫画","デザイン／イラスト","動画／アニメ制作","バレエ","競技ダンス","ヒップホップダンス"]
+  },
+  // パフォーマー気質（外向性）: p56-57最終チャート準拠
+  "外向性":{
+    "STEM":["ファースト・レゴリーグ","ロボット制作","スカウト活動","eスポーツ"],
+    "言語":["英会話／英語スピーチ","ミュージカル／演劇","スピーチ／弁論","落語／漫才／コント","漫才・コント","ディベート"],
+    "運動":["集団競争スポーツ（ドッジボール、サッカー、野球、ソフトボール、バレーボール、バスケットボール、ハンドボール、ラグビー、ラクロス、ホッケー、水球、カーリング、チームダンス、チアリーディングなど）"],
+    "音楽":["楽器全般（集団で行うもの）","合唱／コーラス","リトミック","マーチングバンド","ブラスバンド","ロックバンド／ジャズバンド"],
+    "アート":["バレエ／チームダンス","ミュージカル／演劇","タレント活動","よさこい","子ども神楽"]
+  },
+  // 共感者気質（協調性）: p56-57最終チャート準拠
+  "協調性":{
+    "STEM":["ファースト・レゴリーグ","ロボット制作","スカウト活動"],
+    "言語":["演劇／ドラマ","スピーチ／弁論","英会話／英語スピーチ","生徒会／子ども会","ボランティア／国際交流","落語・講談","漫才・コント"],
+    "運動":["表現競争スポーツ（体操、新体操、トランポリン、チームダンス、チアリーディング、バトントワリング、アーティスティックスイミング、高飛び込み、フィギュアスケート、フリースタイルスキー、スノーボード、サーフィン、一輪車など）"],
+    "音楽":["合唱／コーラス","吹奏楽","マーチングバンド","ブラスバンド","ロックバンド","ジャズバンド"],
+    "アート":["演劇／ドラマ","バレエ／チームダンス","ストリートダンス","よさこい","子ども神楽","タレント活動"]
+  }
 };
 const traitInfo={
-  "外向性":{name:"天才（神童）気質",emoji:"⚡",color:"#FF8C42",desc:"社交的でエネルギッシュ、人との関わりの中で力を発揮します。グループ活動や発表の場で輝き、リーダーシップを自然と発揮します。",tags:["社交的・積極的","存在感が強い","グループで輝く"],competitionTypes:["自己競争","表現競争"],sportsMsg:"集中力が高く個性的な「天才気質」のお子さんは、自己との競争で成長する自己競争スポーツや、感性を活かした表現競争スポーツが向いています。"},
-  "協調性":{name:"研究者気質",emoji:"🤝",color:"#4A9A5A",desc:"思いやり深く、周りとの調和を大切にします。人の気持ちを敏感に察知し、チームの潤滑油として活躍します。",tags:["共感力が高い","思いやり深い","コツコツ探究する"],competitionTypes:["自己競争"],sportsMsg:"丁寧で探究心旺盛な「研究者気質」のお子さんは、記録やスコアを着実に伸ばす自己競争スポーツに強い適性があります。"},
-  "誠実性":{name:"商人気質",emoji:"🏆",color:"#5B7FA6",desc:"目標に向かって粘り強く努力できます。コツコツと継続する力があり、長期的な練習が実を結ぶ活動で力を発揮します。",tags:["粘り強い","目標達成が好き","負けず嫌い"],competitionTypes:["ガチ競争"],sportsMsg:"負けず嫌いで粘り強い「商人気質」のお子さんはガチ競争に参加させると伸びるケースが多いです。"},
-  "精神耐性":{name:"パフォーマー気質",emoji:"🌟",color:"#9B59B6",desc:"情緒が安定していて、プレッシャーの中でも実力を発揮できます。本番に強く、舞台や試合の場面で輝きます。",tags:["本番に強い","精神的にタフ","社交的"],competitionTypes:["集団競争","表現競争"],sportsMsg:"外交的で活発な「パフォーマー気質」のお子さんはチームワークを楽しめる集団競争と、舞台で輝ける表現競争の両方に向いています。"},
-  "開放性":{name:"共感者気質",emoji:"🌈",color:"#E67E22",desc:"好奇心旺盛で、新しいことへの探究心が強いです。型にはまらない発想力があり、創造的な活動で個性が大きく花開きます。",tags:["好奇心旺盛","発想力が豊か","協調的"],competitionTypes:["集団競争","表現競争"],sportsMsg:"調和を愛する「共感者気質」のお子さんは、仲間と一緒に戦う集団競争、感性を活かした表現競争に向いています。"}
+  // 外向性 → パフォーマー気質（変更なし）
+  "外向性":{name:"パフォーマー気質",emoji:"🌟",color:"#9B59B6",
+    shortDiff:"",
+    judgeBasis:"外向性（社交性・活発さ）スコアが最も高かった",
+    desc:"外交的で活発、社交的でエネルギッシュなお子さんです。人との関わりの中で力を発揮し、グループ活動や発表の場で輝きます。",tags:["社交的・活発","存在感が強い","グループで輝く"],competitionTypes:["集団競争","表現競争","採点競技"],sportsMsg:"外交的で活発な「パフォーマー気質」のお子さんはチームワークを楽しめる集団競争、舞台で輝ける表現競争、そして自分の美しさや表現力が得点に直結する採点競技（フィギュアスケート・チアダンス・バトントワリング等）にも高い適性があります。"},
+  // 協調性 → 共感者気質（変更なし）
+  "協調性":{name:"共感者気質",emoji:"🌈",color:"#E67E22",
+    shortDiff:"",
+    judgeBasis:"協調性（共感力・チームへの貢献意欲）スコアが最も高かった",
+    desc:"仲間の気持ちに自然と共感でき、チームの絆を深める力を持つお子さんです。競争よりも「みんなで達成する喜び」に燃え、協力を通じて最大の力を発揮します。",tags:["共感力が高い","競争より協力","チームの心臓"],competitionTypes:["協調競争","集団競争","表現競争"],sportsMsg:"「共感者気質」のお子さんは勝ち負けより「仲間と作り上げる」達成感が最大の動機です。チアダンス・アーティスティックスイミング・マーチングなど、チーム全体で美しさや調和を表現する協調競技が特に向いています。"},
+  // 誠実性 → 研究者気質（仕様書: 誠実性=研究者気質）
+  // ★ 天才気質との違い：天才＝好奇心・閃き・独創性が突出する「没頭型」、研究者＝真面目さと継続力で確実に成果を積む「努力型」
+  "誠実性":{name:"研究者気質",emoji:"🔍",color:"#4A9A5A",
+    shortDiff:"真面目さと粘り強さで着実に成果を積み上げます。好奇心より「きちんとやり遂げる力」が突出しており、記録や数値で成長を実感できる環境で最も力を発揮する「努力型」です。",
+    judgeBasis:"誠実性（真面目さ・継続力）スコアが最も高かった",
+    desc:"真面目でコツコツ努力を続け、自分のペースで物事を深く研究するお子さんです。記録や数値で成長を実感することで力を発揮し、着実に成果を積み上げます。同じ「探究型」でも天才気質が「好きなことへの没頭」で動くのに対し、研究者気質は「やると決めたことをやり切る継続力」が強みです。",
+    tags:["コツコツ努力型","記録・数値で成長","やり切る継続力"],competitionTypes:["自己競争","タイム競技"],sportsMsg:"真面目で粘り強い「研究者気質」のお子さんは、記録やスコアを着実に伸ばす自己競争・タイム競技に強い適性があります。昨日の自分のタイムを0.1秒縮めることが最高のモチベーションになります。"},
+  // 精神耐性 → 商人気質（仕様書: 精神耐性=商人気質）
+  // ※ getTraitInfo()で天才/商人を動的切り替え。このオブジェクトはフォールバック用
+  "精神耐性":{name:"商人気質",emoji:"🏆",color:"#5B7FA6",
+    shortDiff:"",
+    judgeBasis:"精神耐性スコアが最も高かった",
+    desc:"情緒が安定していて落ち着き、どんな場面でも実力を発揮できるお子さんです。コツコツと目標に向かって努力し、着実に成果を積み上げます。",tags:["情緒安定","実力発揮型","着実に結果を出す"],competitionTypes:["ガチ競争","タイム競技"],sportsMsg:"情緒が安定した「商人気質」のお子さんは、プレッシャーの場面でも実力を発揮できます。努力が数字に直結するタイム競技でも着実に成果を積み上げます。"},
+  // 開放性 → 天才気質（仕様書: 開放性=天才気質）
+  // ★ 研究者気質との違い：研究者＝真面目にコツコツ努力して成果を積む「努力型」、天才＝好奇心と独創性で誰も思いつかないアイデアを生み出す「閃き型」
+  "開放性":{name:"天才気質",emoji:"⚡",color:"#FF8C42",
+    shortDiff:"「なぜ？」の探究心と独創的な発想が突出しています。ルールより自分の興味を優先し、一つのことに没頭すると驚異的な集中力を発揮する「閃き型」です。",
+    judgeBasis:"開放性（探究心・好奇心）スコアが最も高かった",
+    desc:"ずば抜けた探究心・好奇心を持ち、「なぜ？」を深く掘り下げる独創的なお子さんです。自分独自のアイデアや視点を大切にし、一つのことに没頭すると驚くほどの力を発揮します。同じ「努力家」でも研究者気質がコツコツ型なのに対し、天才気質は「好きなことへの没頭」がエンジンになります。",
+    tags:["ずば抜けた探究心","独創的な発想","没頭力が高い"],competitionTypes:["自己競争","表現競争"],sportsMsg:"探究心旺盛な「天才気質」のお子さんは、自分のペースで記録を伸ばす個人競技が向いています。他者との比較より「昨日の自分を超える」という自己競争が最大のモチベーションになります。"}
 };
 const talentInfo={"STEM":{label:"STEM的才能",emoji:"🔬",color:"#5B7FA6"},"言語":{label:"言語・博物学的才能",emoji:"📚",color:"#4A9A5A"},"運動":{label:"運動的才能",emoji:"⚡",color:"#FF8C42"},"音楽":{label:"音楽的才能",emoji:"🎵",color:"#9B59B6"},"アート":{label:"アート的才能",emoji:"🎨",color:"#E67E22"}};
-const competitionSports={"自己競争":{sports:[{icon:"🏊",name:"水泳",star:true},{icon:"🏃",name:"陸上"},{icon:"⛳",name:"ゴルフ"},{icon:"🎯",name:"アーチェリー"}]},"ガチ競争":{sports:[{icon:"🎾",name:"テニス",star:true},{icon:"🏓",name:"卓球"},{icon:"🥋",name:"柔道・空手"},{icon:"⚔️",name:"剣道"}]},"集団競争":{sports:[{icon:"⚽",name:"サッカー",star:true},{icon:"🏀",name:"バスケ"},{icon:"⚾",name:"野球"},{icon:"🏐",name:"バレーボール"}]},"表現競争":{sports:[{icon:"🩰",name:"バレエ",star:true},{icon:"💃",name:"ダンス"},{icon:"🤸",name:"新体操"},{icon:"⛸️",name:"フィギュア"}]}};
-const soshitsuData={g1:["背が高い","身体が大きい","手足が長い","首が長い","スタイルが良い","容姿端麗","目が大きい","顔が小さい","手が大きい","指が長い","骨太・がっちり","肩幅が広い","筋肉質","骨格が細い","肌がきれい"],g2:["運動神経が良い","足が速い","すばしっこい","瞬発力がある","筋力が強い","持久力がある","手先が器用","身体が柔軟","バランス感覚が良い","リズム感が良い"],g3:["記憶力が高い","集中力が高い","理解力が高い","言語発達が早い","数字への興味が強い","計算が早い","パズルが得意","空間認識力が高い","論理思考が強い","知的好奇心が旺盛"]};
-const soshitsuHints={"背が高い":["水泳","バレーボール","バスケ"],"手足が長い":["水泳","バレエ","体操"],"首が長い":["バレエ","弦楽器（バイオリン/チェロ）"],"身体が柔軟":["バレエ","新体操","体操","フィギュア"],"手先が器用":["ピアノ","書道・習字","工作","プログラミング"],"指が長い":["ピアノ","弦楽器（バイオリン/チェロ）"],"バランス感覚が良い":["新体操","フィギュア","体操","サーフィン"],"リズム感が良い":["ダンス","打楽器（ドラム/太鼓）","マーチングバンド"],"筋力が強い":["柔道・空手","レスリング","ラグビー"],"瞬発力がある":["陸上","テニス","サッカー"],"足が速い":["陸上","サッカー","野球"],"すばしっこい":["体操","卓球","バドミントン"],"肩幅が広い":["水泳","ラグビー","レスリング"],"骨太・がっちり":["レスリング","柔道・空手","相撲"],"記憶力が高い":["ボードゲーム（将棋・囲碁・チェス）","英会話・英語スピーチ"],"集中力が高い":["プログラミング","ピアノ","将棋"],"数字への興味が強い":["そろばん・暗算","算数オリンピック","株式投資"],"論理思考が強い":["プログラミング","ボードゲーム（将棋・囲碁・チェス）","科学オリンピック"],"言語発達が早い":["英会話・英語スピーチ","スピーチ・弁論","作文・小説・俳句"],"知的好奇心が旺盛":["科学オリンピック","ロボット制作","国際交流・ボランティア"]};
-let stage=1,traitAnswers=new Array(10).fill(null),talentAnswers=new Array(20).fill(null),currentQ=0,selectedSoshitsu=[],resultState={};
-function render(){const isS1=stage===1,qs=isS1?traitQuestions:talentQuestions,ans=isS1?traitAnswers:talentAnswers,q=qs[currentQ],gQ=isS1?currentQ:10+currentQ,pct=Math.round(((gQ+1)/30)*100);document.getElementById('stepLabel').textContent=isS1?'気質 質問 '+(currentQ+1)+' / 10':'才能 質問 '+(currentQ+1)+' / 20';document.getElementById('stepPct').textContent=pct+'%';document.getElementById('progressFill').style.width=pct+'%';document.getElementById('qCategory').textContent=isS1?q.trait:q.talent+'的才能';document.getElementById('qFill').textContent=q.text;document.querySelectorAll('.likert-btn').forEach(function(b,i){b.classList.toggle('selected',ans[currentQ]===i);b.onclick=function(){selectScore(i);};});updateNext();document.getElementById('btnBack').style.visibility=(stage===1&&currentQ===0)?'hidden':'visible';if(stage===2){var s1c=document.getElementById('s1c');s1c.classList.remove('active');s1c.classList.add('done');s1c.textContent='✓';document.getElementById('s1n').classList.remove('active');document.getElementById('s2c').classList.remove('pending');document.getElementById('s2c').classList.add('active');document.getElementById('s2n').classList.add('active');document.getElementById('sl1').classList.add('done');}}
-function selectScore(val){(stage===1?traitAnswers:talentAnswers)[currentQ]=val;document.querySelectorAll('.likert-btn').forEach(function(b,i){b.classList.toggle('selected',i===val);});updateNext();}
-function updateNext(){var ans=(stage===1?traitAnswers:talentAnswers),ready=ans[currentQ]!==null,btn=document.getElementById('btnNext'),isLast=stage===1?currentQ===9:currentQ===19;btn.classList.toggle('active',ready);btn.textContent=isLast?(stage===1?'才能診断へ →':'素質チェックへ →'):'次へ →';}
-function nextQ(){var ans=(stage===1?traitAnswers:talentAnswers);if(ans[currentQ]===null)return;if(stage===1){if(currentQ<9){currentQ++;render();}else showTransition();}else{if(currentQ<19){currentQ++;render();}else showResultPhase1();}}
-function prevQ(){if(stage===2&&currentQ===0){stage=1;currentQ=9;document.getElementById('transitionScreen').classList.remove('show');document.getElementById('quizContent').classList.remove('hide');render();return;}if(currentQ>0){currentQ--;render();}}
-function showTransition(){var scores=computeTraitScores(),top=traitOrder.reduce(function(a,b){return scores[a]>=scores[b]?a:b;});document.getElementById('miniTraitType').textContent=traitInfo[top].emoji+' '+traitInfo[top].name;document.getElementById('quizContent').classList.add('hide');document.getElementById('transitionScreen').classList.add('show');}
+const competitionSports={"自己競争":{sports:[{icon:"🏊",name:"水泳",star:true},{icon:"🏃",name:"陸上"},{icon:"🎾",name:"テニス"},{icon:"⛳",name:"ゴルフ"},{icon:"🎯",name:"アーチェリー"},{icon:"🚣",name:"ボート・カヌー"},{icon:"🎿",name:"スキー・スノーボード"}]},"ガチ競争":{sports:[{icon:"🎾",name:"テニス",star:true},{icon:"🏓",name:"卓球"},{icon:"🥋",name:"柔道・空手"},{icon:"⚔️",name:"剣道"},{icon:"🏸",name:"バドミントン"},{icon:"🤼",name:"レスリング・柔術"}]},"集団競争":{sports:[{icon:"⚽",name:"サッカー",star:true},{icon:"🏐",name:"バレーボール",star:true},{icon:"💃",name:"チームダンス",star:true},{icon:"🏀",name:"バスケ"},{icon:"⚾",name:"野球・ソフト"},{icon:"🏉",name:"ラグビー"},{icon:"🤽",name:"水球・ホッケー"},{icon:"🎭",name:"演劇・ドラマ"},{icon:"🎵",name:"ミュージカル"},{icon:"📣",name:"チアリーディング"},{icon:"🎤",name:"タレント活動"}]},"協調競争":{sports:[{icon:"💃",name:"チームダンス（発表会）",star:true},{icon:"🎭",name:"アーティスティックスイミング"},{icon:"📣",name:"吹奏楽・マーチング"},{icon:"🎪",name:"新体操（団体）"},{icon:"🎵",name:"合唱・コーラス"},{icon:"🤸",name:"チアダンス"},{icon:"🤝",name:"リレー（陸上）"},{icon:"🚣",name:"ボート競技（エイト）"}]},"表現競争":{sports:[{icon:"🩰",name:"バレエ",star:true},{icon:"💃",name:"ダンス"},{icon:"🤸",name:"新体操"},{icon:"⛸️",name:"フィギュアスケート"},{icon:"🎀",name:"バトントワリング"},{icon:"🏔️",name:"登山競技"},{icon:"📣",name:"チアリーディング"},{icon:"🎪",name:"トランポリン・体操"}]},"採点競技":{sports:[{icon:"⛸️",name:"フィギュアスケート",star:true},{icon:"🎀",name:"バトントワリング"},{icon:"🤸",name:"新体操"},{icon:"🩰",name:"バレエ（コンクール）"},{icon:"🎭",name:"アーティスティックスイミング"},{icon:"📣",name:"チアダンス"},{icon:"🪅",name:"チアリーディング（演技審査）"}]},"タイム競技":{sports:[{icon:"🏃",name:"陸上（短距離・ハードル）",star:true},{icon:"🏊",name:"競泳（タイムトライアル）"},{icon:"🚴",name:"自転車競技（トラック）"},{icon:"⛸️",name:"スピードスケート"},{icon:"⛷️",name:"アルペンスキー"},{icon:"🛶",name:"カヤック・ボート競技"}]}};
+const soshitsuData={g1:["背が高い","身体が大きい","手足が長い","首が長い","スタイルが良い","容姿端麗","目が大きい","顔が小さい","手が大きい","指が長い","骨太・がっちり","肩幅が広い","筋肉質","骨格が細い","肌がきれい"],g2:["運動神経が良い","足が速い","すばしっこい","瞬発力がある","筋力が強い","持久力がある","手先が器用","身体が柔軟","バランス感覚が良い","リズム感が良い"],g3:["記憶力が高い","集中力が高い","理解力が高い","言語発達が早い","数字への興味が強い","計算が早い","パズルが得意","空間認識力が高い","論理思考が強い","知的好奇心が旺盛","タイムや数字で成長を確認したい（成果重視）","昨日の自分を超えることに燃える（自己競争）","競争より仲間と一緒に達成することが好き（協調志向）"]};
+const soshitsuHints={"背が高い":["水泳","バレーボール","バスケ"],"手足が長い":["水泳","バレエ","体操"],"首が長い":["バレエ","弦楽器（バイオリン/チェロ）"],"身体が柔軟":["バレエ","新体操","体操","フィギュア","ダンス","空手・テコンドー"],"手先が器用":["ピアノ","書道・習字","工作","プログラミング"],"指が長い":["ピアノ","弦楽器（バイオリン/チェロ）","バスケットボール","ハンドボール"],"バランス感覚が良い":["新体操","フィギュア","体操","サーフィン"],"リズム感が良い":["ダンス","打楽器（ドラム/太鼓）","マーチングバンド"],"筋力が強い":["柔道・空手","レスリング","ラグビー","器械体操","テニス","競泳","打楽器（ドラム/太鼓）"],"瞬発力がある":["陸上","テニス","サッカー"],"足が速い":["陸上","サッカー","野球"],"すばしっこい":["体操","卓球","バドミントン"],"肩幅が広い":["水泳","ラグビー","レスリング"],"骨太・がっちり":["レスリング","柔道・空手","相撲"],"容姿端麗":["バレエ","ダンス","タレント活動","演劇・ドラマ","ミュージカル／演劇","チアダンス","バレエ／チームダンス","フィギュアスケート"],"目が大きい":["タレント活動","演劇・ドラマ","フィギュアスケート"],"顔が小さい":["タレント活動","演劇・ドラマ"],"スタイルが良い":["バレエ","ダンス","タレント活動","フィギュアスケート","新体操"],"記憶力が高い":["将棋","囲碁","チェス","そろばん・暗算","演劇","英会話・英語スピーチ"],"集中力が高い":["プログラミング","ピアノ","将棋"],"数字への興味が強い":["そろばん・暗算","算数オリンピック","株式投資"],"論理思考が強い":["プログラミング","将棋","囲碁","チェス","ディベート","ロボット制作"],"言語発達が早い":["英会話・英語スピーチ","スピーチ・弁論","作文・小説・俳句","落語・講談","漫才・コント","演劇・ドラマ","ディベート"],"知的好奇心が旺盛":["科学オリンピック","ロボット制作","国際交流・ボランティア"],"タイムや数字で成長を確認したい（成果重視）":["陸上（短距離・ハードル）","競泳（タイムトライアル）","自転車競技（トラック）","スピードスケート","アルペンスキー","カヤック・ボート競技"],"昨日の自分を超えることに燃える（自己競争）":["陸上（短距離・ハードル）","競泳（タイムトライアル）","水泳","陸上","スピードスケート","アルペンスキー"],"競争より仲間と一緒に達成することが好き（協調志向）":["チアダンス","アーティスティックスイミング","チームダンス（発表会）","吹奏楽・マーチング","新体操（団体）","合唱・コーラス","リレー（陸上）","ボート競技（エイト）","チアリーディング"]};
+// 精神耐性のスコアに応じてプロファイルを切り替える
+// 仕様書: 精神耐性=商人気質。スコアが高い(情緒安定)→純粋な商人気質、低い(情緒不安定)→天才（神童）気質
+const traitInfoOverride={
+  "精神耐性_高":{  // 情緒安定（スコア5以上）→ 商人気質
+    name:"商人気質",emoji:"🏆",color:"#5B7FA6",
+    shortDiff:"情緒が安定していてプレッシャーに強く、目標に向かって着実に動けます。「探究より達成」「感情より冷静な判断」が得意な実力発揮型です。",
+    judgeBasis:"精神耐性（情緒の安定）スコアが高く、安定した実力発揮型と判定された",
+    desc:"情緒が安定していて落ち着き、どんな場面でも実力を発揮できるお子さんです。コツコツと目標に向かって努力し、着実に成果を積み上げます。プレッシャーの場面でも実力を出せる頼れるタイプです。",
+    tags:["情緒安定","実力発揮型","着実に結果を出す"],
+    competitionTypes:["ガチ競争","タイム競技"],
+    sportsMsg:"情緒が安定した「商人気質」のお子さんは、プレッシャーの場面でも実力を発揮できます。努力が数字に直結するタイム競技でも着実に成果を積み上げます。"
+  },
+  "精神耐性_低":{  // 情緒不安定・凸凹・単独志向 → 天才（神童）気質
+    name:"天才（神童）気質",emoji:"⚡",color:"#FF8C42",
+    shortDiff:"感受性が豊かで得意分野に突出した才能を持つ一方、集団や変化への適応が独自スタイルです。開放性（探究）由来の天才気質とは異なり、「感受性の強さと凸凹感」が個性の核です。",
+    judgeBasis:"精神耐性が低め（感受性・感情表現が豊か）かつ一人志向・凸凹傾向が見られた",
+    desc:"得意なことはずば抜けて優れている一方、集団や人付き合いが苦手な凸凹型のお子さんです。一人で没頭できる環境と「自分のペース」が力を引き出す鍵。周りに合わせるより、自分の世界を深掘りするスタイルで才能が開花します。",
+    tags:["突出した才能・凸凹型","一人で没頭する集中力","集団より個人スタイル"],
+    competitionTypes:["自己競争","表現競争"],
+    sportsMsg:"「天才気質」のお子さんは集団競技より、自分のペースで記録を伸ばす個人競技が向いています。他者との比較より「昨日の自分を超える」という自己競争が最大のモチベーションになります。"
+  }
+};
+// 精神耐性スコアの高低でchartのキーを切り替える
+// 仕様書: 精神耐性=商人気質（高）/ 天才気質（低）
+// chartキーは: "誠実性"=研究者気質, "開放性"=天才気質, "精神耐性"=天才気質（別パターン）
+function getChartKey(trait, traitScores){
+  if(trait==="精神耐性" && traitScores){
+    // 天才気質判定: 精神耐性低＝感受性豊か → 天才気質チャート(開放性キー)を使用
+    // 商人気質: 精神耐性高＝目標達成型 → 誠実性チャート(コツコツ努力)を使用
+    return isTensaiJudge(traitScores) ? "精神耐性" : "誠実性";
+  }
+  return trait;
+}
+function isTensaiJudge(traitScores){
+  var shinsei = traitScores["精神耐性"]||0;
+  var gaikou  = traitScores["外向性"]||0;
+  var kyouchou= traitScores["協調性"]||0;
+  // 補助質問スコアを追加判定に組み込む
+  var soloScore  = subAnswers[0]||0;  // 一人志向 (0-4)
+  var dekoboko   = subAnswers[2]||0;  // 凸凹 (0-4)
+  // 天才気質判定:
+  // ① 精神耐性スコアが低い（集団適応が苦手）
+  // ② 精神耐性が中程度でも「外向性が極めて低い＋協調性も低い」
+  // ③ 補助Q: 一人志向(≥3)かつ凸凹(≥3) → 天才気質強確認
+  var cond1 = shinsei <= 4;
+  var cond2 = shinsei <= 5 && gaikou <= 2 && kyouchou <= 3;
+  var cond3 = soloScore >= 3 && dekoboko >= 3 && shinsei <= 6;
+  return cond1 || cond2 || cond3;
+}
+function getTraitInfo(trait, traitScores){
+  if(trait==="精神耐性"){
+    // fixedTop1TraitIsTensaiが確定済み（showTransition後）はそれを優先使用
+    // 未確定（showTransition前）は旧来の動的判定にフォールバック
+    var isTensai = (fixedTop1Trait==="精神耐性")
+      ? fixedTop1TraitIsTensai
+      : (traitScores ? isTensaiJudge(traitScores) : false);
+    return isTensai ? traitInfoOverride["精神耐性_低"] : traitInfoOverride["精神耐性_高"];
+  }
+  return traitInfo[trait];
+}
+let stage=1,traitAnswers=new Array(10).fill(null),talentAnswers=new Array(20).fill(null),subAnswers=new Array(3).fill(null),currentQ=0,selectedSoshitsu=[],resultState={},fixedTop1Trait=null,fixedTop1TraitIsTensai=false;
+function render(){
+  var isS1=stage===1,isS3=stage===3;
+  var qs=isS1?traitQuestions:(isS3?subQuestions:talentQuestions);
+  var ans=isS1?traitAnswers:(isS3?subAnswers:talentAnswers);
+  var q=qs[currentQ];
+  var gQ=isS1?currentQ:(isS3?30+currentQ:10+currentQ);
+  var total=33;
+  var pct=Math.round(((gQ+1)/total)*100);
+  var label=isS1?'気質 質問 '+(currentQ+1)+' / 10':(isS3?'補助 質問 '+(currentQ+1)+' / 3':'才能 質問 '+(currentQ+1)+' / 20');
+  document.getElementById('stepLabel').textContent=label;
+  document.getElementById('stepPct').textContent=pct+'%';
+  document.getElementById('progressFill').style.width=pct+'%';
+  document.getElementById('qCategory').textContent=isS1?'気質チェック':(isS3?'補助チェック':q.talent+'的才能');
+  document.getElementById('qFill').textContent=q.text;
+  document.querySelectorAll('.likert-btn').forEach(function(b,i){b.classList.toggle('selected',ans[currentQ]===i);b.onclick=function(){selectScore(i);};});
+  updateNext();
+  document.getElementById('btnBack').style.visibility=(stage===1&&currentQ===0)?'hidden':'visible';
+  if(stage===2||stage===3){var s1c=document.getElementById('s1c');s1c.classList.remove('active');s1c.classList.add('done');s1c.textContent='✓';document.getElementById('s1n').classList.remove('active');document.getElementById('s2c').classList.remove('pending');document.getElementById('s2c').classList.add('active');document.getElementById('s2n').classList.add('active');document.getElementById('sl1').classList.add('done');}
+}
+function selectScore(val){
+  var ans=stage===1?traitAnswers:(stage===3?subAnswers:talentAnswers);
+  ans[currentQ]=val;
+  document.querySelectorAll('.likert-btn').forEach(function(b,i){b.classList.toggle('selected',i===val);});
+  updateNext();
+}
+function updateNext(){
+  var ans=stage===1?traitAnswers:(stage===3?subAnswers:talentAnswers);
+  var ready=ans[currentQ]!==null;
+  var btn=document.getElementById('btnNext');
+  var isLast=(stage===1&&currentQ===9)||(stage===2&&currentQ===19)||(stage===3&&currentQ===2);
+  btn.classList.toggle('active',ready);
+  btn.textContent=isLast?(stage===1?'才能診断へ →':(stage===2?'補助質問へ →':'素質チェックへ →')):'次へ →';
+}
+function nextQ(){
+  var ans=stage===1?traitAnswers:(stage===3?subAnswers:talentAnswers);
+  if(ans[currentQ]===null)return;
+  if(stage===1){
+    if(currentQ<9){currentQ++;render();}else showTransition();
+  }else if(stage===2){
+    if(currentQ<19){currentQ++;render();}else{stage=3;currentQ=0;render();}
+  }else{
+    if(currentQ<2){currentQ++;render();}else showResultPhase1();
+  }
+}
+function prevQ(){
+  if(stage===3&&currentQ===0){stage=2;currentQ=19;render();return;}
+  if(stage===2&&currentQ===0){stage=1;currentQ=9;document.getElementById('transitionScreen').classList.remove('show');document.getElementById('quizContent').classList.remove('hide');render();return;}
+  if(currentQ>0){currentQ--;render();}
+}
+function showTransition(){
+  var scores=computeTraitScoresOnly();
+  var top=traitOrder.reduce(function(a,b){return scores[a]>=scores[b]?a:b;});
+  // 精神耐性が主気質の場合、天才/商人どちらかを確定
+  // 精神耐性スコアが低い（情緒不安定）or 外向性・協調性も低い → 天才（神童）気質
+  if(top==="精神耐性" && isTensaiJudgeOnly(scores)) top="精神耐性"; // 変数は同じだが判定フラグを設定
+  fixedTop1Trait=top;
+  // 精神耐性が主気質の場合、天才/商人どちらかをここで確定保存（補助Qで再判定しない）
+  fixedTop1TraitIsTensai = (top==="精神耐性") ? isTensaiJudgeOnly(scores) : false;
+  var ti_=getTraitInfo(top,scores);
+  document.getElementById('miniTraitType').textContent=ti_.emoji+' '+ti_.name;
+  document.getElementById('quizContent').classList.add('hide');
+  document.getElementById('transitionScreen').classList.add('show');
+}
 function startStage2(){stage=2;currentQ=0;document.getElementById('transitionScreen').classList.remove('show');document.getElementById('quizContent').classList.remove('hide');render();}
-function computeTraitScores(){var sc={};traitOrder.forEach(function(t){sc[t]=0;});traitQuestions.forEach(function(q,i){var r=traitAnswers[i]||0;sc[q.trait]+=q.reverse?(4-r):r;});return sc;}
+// 気質10問のみのスコア（補助質問補正なし）→ 主気質の固定判定に使用
+function computeTraitScoresOnly(){
+  var sc={};
+  traitOrder.forEach(function(t){sc[t]=0;});
+  traitQuestions.forEach(function(q,i){
+    var r=traitAnswers[i]||0;
+    sc[q.trait]+=q.reverse?(4-r):r;
+  });
+  // 仕様書準拠: Q1+Q6=開放性(0〜8), Q2+Q7=誠実性(0〜8),
+  //             Q3+Q8=精神耐性(0〜8), Q4+Q9=外向性(0〜8), Q5+Q10=協調性(0〜8)
+  // 独自ブースト（開放性/協調性への+1.5加算）は仕様書にないため廃止
+  return sc;
+}
+// 天才気質判定（補助質問なし版）→ showTransitionで使用
+function isTensaiJudgeOnly(sc){
+  var s=sc['精神耐性']||0, g=sc['外向性']||0, k=sc['協調性']||0;
+  return s<=4 || (s<=5 && g<=2 && k<=3);
+}
+// 気質10問＋補助質問の全補正込みスコア → showResultPhase1・showBest3で参照スコアとして使用
+// ただし主気質(top1Trait)はfixedTop1Traitで固定済み
+function computeTraitScores(){
+  var sc=computeTraitScoresOnly();
+  var soloScore       = subAnswers[0]||0;  // 一人志向(0-4)
+  var competitiveScore= subAnswers[1]||0;  // 競争心・負けず嫌い(0-4)
+  var dekoboko        = subAnswers[2]||0;  // 凸凹(0-4)
+
+  // 一人志向が強い → 開放性（研究者気質）を補強
+  if(soloScore >= 3)  sc['開放性'] = (sc['開放性']||0) + soloScore * 0.4;
+
+  // 競争心・負けず嫌いが強い → 誠実性（商人気質）を補強
+  if(competitiveScore >= 3){
+    var compBoost = (soloScore <= 2) ? competitiveScore * 0.6 : competitiveScore * 0.3;
+    sc['誠実性'] = (sc['誠実性']||0) + compBoost;
+    if(soloScore >= 3) sc['開放性'] = (sc['開放性']||0) + competitiveScore * 0.2;
+  }
+
+  // 凸凹が強く一人志向も高い → 天才気質方向へ
+  if(dekoboko >= 3 && soloScore >= 3) sc['精神耐性'] = Math.max(0,(sc['精神耐性']||0) - 1.5);
+
+  // 誠実性ブースト: 高スコア時にさらに上乗せ（商人気質の弁別強化）
+  if((sc['誠実性']||0) >= 7) sc['誠実性'] = (sc['誠実性']||0) + 1.0;
+
+  // ── 個人性補正：外向性が生スコア1位のときのみ適用 ──
+  // 外向性が高くても一人志向が強い場合は外向性を減衰・誠実性を補強
+  var rawTopForSolo = traitOrder.slice().sort(function(a,b){return sc[b]-sc[a];})[0];
+  if(soloScore >= 3 && rawTopForSolo === '外向性' && (sc['外向性']||0) >= 5){
+    var soloAtten = soloScore * 0.5;
+    sc['外向性'] = Math.max(0, (sc['外向性']||0) - soloAtten);
+    sc['誠実性'] = (sc['誠実性']||0) + soloScore * 0.4;
+  }
+
+  // ══════════════════════════════════════════════════════════════
+  // ── 研究者気質（誠実性）↔ 商人気質（精神耐性）三軸重み付け補正 ──
+  // 仕様書対応: 誠実性=研究者気質、精神耐性=商人気質、開放性=天才気質
+  // ※ この補正は「誠実性」または「精神耐性」が上位のケースにのみ適用する
+  // ══════════════════════════════════════════════════════════════
+  var rawTop = traitOrder.slice().sort(function(a,b){return sc[b]-sc[a];})[0];
+  var applyAxes = (rawTop==='誠実性'||rawTop==='精神耐性'||rawTop==='開放性');
+
+  var shinsei  = sc['精神耐性']||0;
+  var seijitsu = sc['誠実性']  ||0;
+  var gaikou   = sc['外向性']  ||0;
+
+  if(applyAxes){
+    // 軸①：情緒安定（精神耐性スコア高）→ 商人気質（精神耐性）を補強
+    if(shinsei >= 6){
+      var stabilityBoost = (shinsei - 5) * 0.4;
+      sc['精神耐性'] = (sc['精神耐性']||0) + stabilityBoost;
+    }
+    // 情緒不安定（精神耐性スコア低）→ 開放性（天才気質）を補強
+    if(shinsei <= 4){
+      var instabilityBoost = (5 - shinsei) * 0.3;
+      sc['開放性'] = (sc['開放性']||0) + instabilityBoost;
+    }
+    // 軸②：誠実性スコアが高い（コツコツ努力型）→ 研究者気質（誠実性）をさらに補強
+    if(seijitsu >= 6){
+      var diligenceBoost = (seijitsu - 5) * 0.35;
+      sc['誠実性'] = (sc['誠実性']||0) + diligenceBoost;
+      sc['精神耐性'] = Math.max(0, (sc['精神耐性']||0) - diligenceBoost * 0.4);
+    }
+    // 軸③：人見知り強（外向性スコアが低い）→ 研究者/天才補強
+    if(gaikou <= 3){
+      var shynessBoost = (4 - gaikou) * 0.35;
+      sc['開放性'] = (sc['開放性']||0) + shynessBoost;
+      sc['精神耐性'] = Math.max(0, (sc['精神耐性']||0) - shynessBoost * 0.3);
+    }
+    // 外向性が高い（社交的）→ 商人気質（精神耐性）方向を補強
+    if(gaikou >= 6){
+      var socialBoost = (gaikou - 5) * 0.3;
+      sc['精神耐性'] = (sc['精神耐性']||0) + socialBoost;
+    }
+  }
+
+  return sc;
+}
 function computeTalentScores(){var sc={};talentOrder.forEach(function(t){sc[t]=0;});talentQuestions.forEach(function(q,i){sc[q.talent]+=talentAnswers[i]||0;});return sc;}
 function showResultPhase1(){
   document.getElementById('quizContent').classList.add('hide');document.getElementById('resultBox').classList.add('show');
   var tSc=computeTraitScores(),aSc=computeTalentScores();
-  var sortedTraits=traitOrder.slice().sort(function(a,b){return tSc[b]-tSc[a];}),top1Trait=sortedTraits[0],top2Trait=sortedTraits[1];
+
+  // ── 主気質はshowTransitionで確定したfixedTop1Traitを絶対に使用 ──
+  // 補助Qの回答内容によって主気質を後から上書きしない（診断結果との不一致を防ぐ）
+  var top1Trait = fixedTop1Trait || traitOrder.slice().sort(function(a,b){return tSc[b]-tSc[a];})[0];
+
+  // 副気質: top1Traitを除いた中でスコアが最高のもの
+  var top2Trait = traitOrder.slice().sort(function(a,b){return tSc[b]-tSc[a];}).filter(function(t){return t!==top1Trait;})[0];
   var sortedTalents=talentOrder.slice().sort(function(a,b){return aSc[b]-aSc[a];}),top1Talent=sortedTalents[0],top2Talent=sortedTalents[1];
   resultState={tSc:tSc,aSc:aSc,top1Trait:top1Trait,top2Trait:top2Trait,top1Talent:top1Talent,top2Talent:top2Talent};
-  var ti=traitInfo[top1Trait];
+  var ti=getTraitInfo(top1Trait,tSc);
   document.getElementById('resultEmoji').textContent=ti.emoji;
   document.getElementById('resultType').textContent=ti.name;
   document.getElementById('resultTalentBadge').textContent=talentInfo[top1Talent].emoji+' '+talentInfo[top1Talent].label+'が強み';
   document.getElementById('resultDesc').textContent=ti.desc;
-  document.getElementById('traitScoresDisplay').innerHTML=traitOrder.map(function(t){var s=tSc[t],pct=Math.round((s/8)*100),isTop=t===top1Trait,is2nd=t===top2Trait,col=isTop?ti.color:is2nd?ti.color+'88':'#D4B8B0';return'<div class="score-row"><div class="score-label">'+traitInfo[t].name+'</div><div class="score-bar-track"><div class="score-bar-fill" style="width:'+pct+'%;background:'+col+'"></div></div><div class="score-val">'+s+'/8</div>'+(isTop?'<span class="score-badge high">1位</span>':is2nd?'<span class="score-badge high">2位</span>':'')+'</div>';}).join('');
+
+  // ── 判定根拠バナーを設定 ──
+  var judgeBasis = ti.judgeBasis || '';
+  // 精神耐性が主気質の場合は override から取得
+  if(top1Trait==='精神耐性'){
+    var overrideKey = fixedTop1TraitIsTensai ? '精神耐性_低' : '精神耐性_高';
+    judgeBasis = traitInfoOverride[overrideKey].judgeBasis || '';
+  }
+  document.getElementById('judgeBasisText').textContent = judgeBasis;
+  document.getElementById('judgeBasisBanner').style.display = judgeBasis ? 'block' : 'none';
+
+  // ── 研究者↔天才の違いボックスを表示 ──
+  var distinctionBox = document.getElementById('typeDistinctionBox');
+  var distinctionText = document.getElementById('typeDistinctionText');
+  var isTensaiResult = top1Trait==='開放性' || (top1Trait==='精神耐性' && fixedTop1TraitIsTensai);
+  var isKenkyuResult = top1Trait==='誠実性';
+  if(isTensaiResult){
+    var kenkyuInfo = traitInfo['誠実性'];
+    distinctionText.innerHTML = '<strong>研究者気質との違い：</strong>' + kenkyuInfo.shortDiff;
+    distinctionBox.style.display='block';
+  } else if(isKenkyuResult){
+    var tensaiInfo = traitInfo['開放性'];
+    distinctionText.innerHTML = '<strong>天才気質との違い：</strong>' + tensaiInfo.shortDiff;
+    distinctionBox.style.display='block';
+  } else {
+    distinctionBox.style.display='none';
+  }
+  document.getElementById('traitScoresDisplay').innerHTML=traitOrder.map(function(t){
+    var s=tSc[t],pct=Math.round((s/8)*100),isTop=t===top1Trait,is2nd=t===top2Trait;
+    var ti2=getTraitInfo(t,tSc);
+    var displayName=ti2.name, displayEmoji=ti2.emoji;
+    // 精神耐性行：fixedTop1TraitIsTensai（確定済みフラグ）を優先使用
+    if(t==='精神耐性'){
+      var showTensai = (fixedTop1Trait==='精神耐性') ? fixedTop1TraitIsTensai : isTensaiJudge(tSc);
+      if(showTensai){
+        displayName='天才（神童）気質'; displayEmoji='⚡';
+      } else {
+        displayName='商人気質（情緒安定）'; displayEmoji='🏆';
+      }
+    }
+    // 開放性・誠実性はサブラベルで区別を補足
+    var subLabel='';
+    if(t==='開放性') subLabel=' <span style="font-size:10px;color:#A07040;margin-left:4px">探究・独創</span>';
+    if(t==='誠実性') subLabel=' <span style="font-size:10px;color:#4A7A5A;margin-left:4px">継続・努力</span>';
+    var col=isTop?ti2.color:is2nd?ti2.color+'88':'#D4B8B0';
+    return '<div class="score-row"><div class="score-label">'+displayEmoji+' '+displayName+subLabel+'</div>'
+      +'<div class="score-bar-track"><div class="score-bar-fill" style="width:'+pct+'%;background:'+col+'"></div></div>'
+      +'<div class="score-val">'+s+'/8</div>'
+      +(isTop?'<span class="score-badge high">1位</span>':is2nd?'<span class="score-badge high">2位</span>':'')
+      +'</div>';
+  }).join('');
   document.getElementById('talentScoresDisplay').innerHTML=talentOrder.map(function(t){var s=aSc[t],pct=Math.round((s/16)*100),isHigh=s>=9,isTop=t===top1Talent,is2nd=t===top2Talent,col=isTop?talentInfo[t].color:is2nd?talentInfo[t].color+'88':(isHigh?'#A0C8A0':'#D4B8B0');return'<div class="score-row"><div class="score-label">'+talentInfo[t].emoji+' '+talentInfo[t].label+'</div><div class="score-bar-track"><div class="score-bar-fill" style="width:'+pct+'%;background:'+col+'"></div></div><div class="score-val">'+s+'/16</div><span class="score-badge '+(isHigh?'high':'low')+'">'+(isHigh?'高め':'低め')+'</span></div>';}).join('');
   document.getElementById('sportsMessage').textContent=ti.sportsMsg;
-  var ct1=ti.competitionTypes,ct2=traitInfo[top2Trait].competitionTypes;
-  function renderTB(trait,rank){var cts=traitInfo[trait].competitionTypes;return'<div class="sports-trait-block '+(rank===1?'primary':'')+'"><div class="sports-trait-rank">'+(rank===1?'主気質（1位）':'副気質（2位）')+'</div><div class="sports-trait-name">'+traitInfo[trait].emoji+' '+traitInfo[trait].name+'</div>'+cts.map(function(c){return'<span class="sports-comp-tag">🏅 '+c+'</span>';}).join('')+'<div class="sports-list">'+((competitionSports[cts[0]]||{sports:[]}).sports).map(function(s){return'<span class="sport-chip '+(s.star?'highlight':'')+'">'+s.icon+' '+s.name+'</span>';}).join('')+(cts[1]?((competitionSports[cts[1]]||{sports:[]}).sports).slice(0,2).map(function(s){return'<span class="sport-chip">'+s.icon+' '+s.name+'</span>';}).join(''):'')+'</div></div>';}
+  var ct1=ti.competitionTypes,ct2=getTraitInfo(top2Trait,tSc).competitionTypes;
+  function renderTB(trait,rank){var ti_=getTraitInfo(trait,tSc);var cts=ti_.competitionTypes;return'<div class="sports-trait-block '+(rank===1?'primary':'')+'"><div class="sports-trait-rank">'+(rank===1?'主気質（1位）':'副気質（2位）')+'</div><div class="sports-trait-name">'+ti_.emoji+' '+ti_.name+'</div>'+cts.map(function(c){return'<span class="sports-comp-tag">🏅 '+c+'</span>';}).join('')+'<div class="sports-list">'+((competitionSports[cts[0]]||{sports:[]}).sports).map(function(s){return'<span class="sport-chip '+(s.star?'highlight':'')+'">'+s.icon+' '+s.name+'</span>';}).join('')+(cts[1]?((competitionSports[cts[1]]||{sports:[]}).sports).slice(0,2).map(function(s){return'<span class="sport-chip">'+s.icon+' '+s.name+'</span>';}).join(''):'')+'</div></div>';}
   document.getElementById('sportsTraitBlocks').innerHTML=renderTB(top1Trait,1)+renderTB(top2Trait,2);
   var allCts=ct1.concat(ct2).filter(function(v,i,a){return a.indexOf(v)===i;}).slice(0,3),pickups=[];
-  allCts.forEach(function(ct){((competitionSports[ct]||{sports:[]}).sports).forEach(function(s,i){if(i<2&&pickups.length<4)pickups.push({icon:s.icon,name:s.name,compLabel:ct,star:i===0});});});
-  document.getElementById('sportsPickupGrid').innerHTML=pickups.slice(0,4).map(function(s,i){return'<div class="sports-pickup-card '+(i===0?'star':'')+'">'+( i===0?'<div class="star-badge">⭐ イチオシ</div>':'')+'<div class="sports-pickup-icon">'+s.icon+'</div><div class="sports-pickup-name">'+s.name+'</div><div class="sports-pickup-comp">'+s.compLabel+'</div></div>';}).join('');
+  allCts.forEach(function(ct){((competitionSports[ct]||{sports:[]}).sports).forEach(function(s,i){if(i<3&&pickups.length<6)pickups.push({icon:s.icon,name:s.name,compLabel:ct,star:i===0});});});
+  document.getElementById('sportsPickupGrid').innerHTML=pickups.slice(0,6).map(function(s,i){return'<div class="sports-pickup-card '+(i===0?'star':'')+'">'+( i===0?'<div class="star-badge">⭐ イチオシ</div>':'')+'<div class="sports-pickup-icon">'+s.icon+'</div><div class="sports-pickup-name">'+s.name+'</div><div class="sports-pickup-comp">'+s.compLabel+'</div></div>';}).join('');
   var nonSportTalents=sortedTalents.filter(function(t){return t!=='運動';}).slice(0,2);
-  var nsHTML='';nonSportTalents.forEach(function(talent,idx){var hobbies=[];var h1=(chart[top1Trait][talent]||[]).slice(0,4);var h2=(chart[top2Trait][talent]||[]).slice(0,3);h1.concat(h2).forEach(function(h){if(hobbies.indexOf(h)<0)hobbies.push(h);});hobbies=hobbies.slice(0,6);nsHTML+='<div class="talent-block"><div class="talent-block-header"><div class="talent-block-emoji">'+talentInfo[talent].emoji+'</div><div class="talent-block-name">'+talentInfo[talent].label+'</div><div class="talent-block-rank">才能'+(idx+1)+'位</div></div><div class="hobby-chips">'+hobbies.map(function(h){return'<span class="hobby-chip">'+h+'</span>';}).join('')+'</div></div>';});
+  var nsHTML='';nonSportTalents.forEach(function(talent,idx){var hobbies=[];var h1=(chart[getChartKey(top1Trait,tSc)][talent]||[]).slice(0,8);var h2=(chart[getChartKey(top2Trait,tSc)][talent]||[]).slice(0,6);h1.concat(h2).forEach(function(h){if(hobbies.indexOf(h)<0)hobbies.push(h);});hobbies=hobbies.slice(0,10);nsHTML+='<div class="talent-block"><div class="talent-block-header"><div class="talent-block-emoji">'+talentInfo[talent].emoji+'</div><div class="talent-block-name">'+talentInfo[talent].label+'</div><div class="talent-block-rank">才能'+(idx+1)+'位</div></div><div class="hobby-chips">'+hobbies.map(function(h){return'<span class="hobby-chip">'+h+'</span>';}).join('')+'</div></div>';});
   document.getElementById('nonsportsContent').innerHTML=nsHTML;
   ['g1','g2','g3'].forEach(function(gid){document.getElementById('ss-'+gid).innerHTML=soshitsuData[gid].map(function(s){return'<span class="ss-chip" onclick="toggleSoshitsu(this,\''+s+'\')">'+s+'</span>';}).join('');});
+  // ── 商人気質キャッチコピー＆言語才能データをresultStateに保存（メールモーダルで使用） ──
+  var traitIsShonin = top1Trait==='誠実性' ||
+    (top1Trait==='精神耐性' && (tSc['精神耐性']||0)>=5);
+  if(traitIsShonin){
+    var gaikouScore = tSc['外向性']||0;
+    var stemScore   = aSc['STEM']||0;
+    var shoninCopy;
+    if(gaikouScore >= 5 && stemScore >= 9){
+      shoninCopy = '目標を数値で捉え、論理で戦略を組み立てる「戦略家タイプ」です。データと成果にこだわり、自分を更新し続ける力が最大の武器です。';
+    } else if(gaikouScore >= 5){
+      shoninCopy = '努力を確実に成果へ変える「プロフェッショナル・アチーバータイプ」です。昨日の自分というライバルを超え続ける時、誰にも真似できない強さが生まれます。';
+    } else if(stemScore >= 9){
+      shoninCopy = '数字と論理で「自己を更新し続ける開拓者タイプ」です。タイムや記録という明確な指標で成長を実感し、地道な努力が大きな結果へと変わります。';
+    } else {
+      shoninCopy = '自分の努力を確実に「成果」へと変えられるプロフェッショナル・アスリートタイプです。昨日の自分というライバルを追い越す時、誰にも真似できないスピードが生まれます。';
+    }
+    resultState.shoninCopy = shoninCopy;
+    resultState.traitIsShonin = true;
+  }
+  var langScore = aSc['言語']||0;
+  var topTalentIsLang = sortedTalents[0]==='言語' || sortedTalents[1]==='言語';
+  resultState.langScore = langScore;
+  resultState.topTalentIsLang = topTalentIsLang;
   document.getElementById('resultBox').scrollIntoView({behavior:'smooth',block:'start'});
 }
 function toggleSoshitsu(el,val){el.classList.toggle('sel');if(el.classList.contains('sel')){if(selectedSoshitsu.indexOf(val)<0)selectedSoshitsu.push(val);}else{selectedSoshitsu=selectedSoshitsu.filter(function(v){return v!==val;});}}
+// ─── 素質ブーストテーブル ───────────────────────────────────────────
+// 各習い事・スポーツ名に「推奨素質タグ」と「ボーナス係数(乗算)」を定義。
+// matchBoost: 1回マッチするたびにスコアに掛ける係数（例: 1.25 = 25%増）
+// Tier1(指が長い→ピアノ等) は 1.40 で最優先。
+const lessonSoshitsuMap = {
+  // ── ピアノ・弦楽器: 指の長さ＋記憶力で大幅ブースト（Tier1） ──
+  "ピアノ":              { soshitsu:["指が長い","記憶力が高い","手先が器用","集中力が高い"], matchBoost:1.40 },
+  "鍵盤楽器（ピアノ／オルガン）":{ soshitsu:["指が長い","記憶力が高い","手先が器用","集中力が高い"], matchBoost:1.40 },
+  "弦楽器（バイオリン／チェロ）":{ soshitsu:["指が長い","首が長い","記憶力が高い","手先が器用"],   matchBoost:1.40 },
+  "弦楽器（バイオリン/チェロ）": { soshitsu:["指が長い","首が長い","記憶力が高い","手先が器用"],   matchBoost:1.40 },
+  // ── バスケット・ハンドボール: 指が長い＋背が高い（Tier1） ──
+  "バスケ":              { soshitsu:["指が長い","背が高い","手が大きい","筋力が強い"],            matchBoost:1.40 },
+  "バスケットボール":    { soshitsu:["指が長い","背が高い","手が大きい","筋力が強い"],            matchBoost:1.40 },
+  "ハンドボール":        { soshitsu:["指が長い","背が高い","手が大きい","筋力が強い"],            matchBoost:1.40 },
+  // ── バレエ・ダンス・体操系: 手足が長い＋柔軟（Tier1） ──
+  "バレエ":              { soshitsu:["手足が長い","首が長い","身体が柔軟","スタイルが良い","容姿端麗","骨格が細い"], matchBoost:1.40 },
+  "バレエ／ダンス":      { soshitsu:["手足が長い","首が長い","身体が柔軟","スタイルが良い","容姿端麗"],           matchBoost:1.40 },
+  "バレエ／チームダンス":{ soshitsu:["手足が長い","身体が柔軟","スタイルが良い","容姿端麗"],                   matchBoost:1.35 },
+  "ダンス":              { soshitsu:["身体が柔軟","リズム感が良い","スタイルが良い","容姿端麗"],                 matchBoost:1.35 },
+  "チームダンス":        { soshitsu:["身体が柔軟","リズム感が良い"],                                           matchBoost:1.30 },
+  "ストリートダンス":    { soshitsu:["身体が柔軟","リズム感が良い"],                                           matchBoost:1.30 },
+  "ヒップホップダンス":  { soshitsu:["身体が柔軟","リズム感が良い"],                                           matchBoost:1.30 },
+  "新体操":              { soshitsu:["身体が柔軟","手足が長い","バランス感覚が良い","スタイルが良い"],           matchBoost:1.35 },
+  "体操":                { soshitsu:["身体が柔軟","すばしっこい","バランス感覚が良い"],                         matchBoost:1.30 },
+  "器械体操":            { soshitsu:["身体が柔軟","筋力が強い","バランス感覚が良い"],                           matchBoost:1.30 },
+  "フィギュアスケート":  { soshitsu:["身体が柔軟","バランス感覚が良い","スタイルが良い","容姿端麗"],             matchBoost:1.30 },
+  "トランポリン・体操":  { soshitsu:["身体が柔軟","バランス感覚が良い"],                                       matchBoost:1.25 },
+  "演劇・ドラマ":        { soshitsu:["容姿端麗","目が大きい","顔が小さい","記憶力が高い","言語発達が早い"],     matchBoost:1.35 },
+  "演劇（ミュージカル）":{ soshitsu:["容姿端麗","記憶力が高い","言語発達が早い"],                               matchBoost:1.35 },
+  "演劇／ドラマ":        { soshitsu:["容姿端麗","目が大きい","顔が小さい","記憶力が高い","言語発達が早い"],     matchBoost:1.35 },
+  "演劇":                { soshitsu:["容姿端麗","記憶力が高い","言語発達が早い"],                               matchBoost:1.35 },
+  "ミュージカル／演劇":  { soshitsu:["容姿端麗","記憶力が高い","言語発達が早い"],                               matchBoost:1.35 },
+  "タレント活動":        { soshitsu:["容姿端麗","目が大きい","顔が小さい","スタイルが良い"],                   matchBoost:1.35 },
+  // ── 水泳・競泳: 背が高い＋肩幅＋手足が長い ──
+  "水泳":                { soshitsu:["背が高い","手足が長い","肩幅が広い","持久力がある"],                     matchBoost:1.25 },
+  "競泳":                { soshitsu:["背が高い","手足が長い","肩幅が広い","筋力が強い"],                       matchBoost:1.30 },
+  // ── 格闘・武道系: 筋力・骨格 ──
+  "柔道・空手":          { soshitsu:["筋力が強い","骨太・がっちり","身体が柔軟"],                             matchBoost:1.25 },
+  "空手・テコンドー":    { soshitsu:["筋力が強い","身体が柔軟","すばしっこい"],                               matchBoost:1.25 },
+  "レスリング・柔術":    { soshitsu:["筋力が強い","骨太・がっちり","肩幅が広い"],                             matchBoost:1.25 },
+  "レスリング":          { soshitsu:["筋力が強い","骨太・がっちり","肩幅が広い"],                             matchBoost:1.25 },
+  "ラグビー":            { soshitsu:["筋力が強い","骨太・がっちり","肩幅が広い","身体が大きい"],              matchBoost:1.25 },
+  // ── テニス・バドミントン・卓球: 瞬発力＋すばしっこい ──
+  "テニス":              { soshitsu:["瞬発力がある","すばしっこい","筋力が強い","手が大きい"],                 matchBoost:1.25 },
+  "バドミントン":        { soshitsu:["すばしっこい","瞬発力がある"],                                          matchBoost:1.20 },
+  "卓球":                { soshitsu:["すばしっこい","瞬発力がある","手先が器用"],                             matchBoost:1.20 },
+  // ── プログラミング・論理系: 論理思考＋集中力 ──
+  "プログラミング":      { soshitsu:["論理思考が強い","集中力が高い","数字への興味が強い","パズルが得意"],     matchBoost:1.30 },
+  "ロボット制作":        { soshitsu:["論理思考が強い","知的好奇心が旺盛","手先が器用"],                       matchBoost:1.25 },
+  "ファースト・レゴリーグ":{ soshitsu:["論理思考が強い","手先が器用"],                                       matchBoost:1.20 },
+  // ── 将棋・囲碁・チェス: 記憶力＋論理思考 ──
+  "将棋":                { soshitsu:["記憶力が高い","論理思考が強い","集中力が高い"],                         matchBoost:1.30 },
+  "囲碁":                { soshitsu:["記憶力が高い","論理思考が強い","集中力が高い"],                         matchBoost:1.30 },
+  "チェス":              { soshitsu:["記憶力が高い","論理思考が強い","集中力が高い"],                         matchBoost:1.30 },
+  "ボードゲーム（将棋・囲碁・チェス）":{ soshitsu:["記憶力が高い","論理思考が強い","集中力が高い"],           matchBoost:1.30 },
+  // ── そろばん・暗算: 記憶力＋数字 ──
+  "そろばん／暗算":      { soshitsu:["記憶力が高い","数字への興味が強い","計算が早い"],                      matchBoost:1.25 },
+  "そろばん・暗算":      { soshitsu:["記憶力が高い","数字への興味が強い","計算が早い"],                      matchBoost:1.25 },
+  // ── 英会話・言語: 言語発達が早い ──
+  "英会話・英語スピーチ":{ soshitsu:["言語発達が早い","記憶力が高い"],                                       matchBoost:1.20 },
+  "英会話／英語スピーチ":{ soshitsu:["言語発達が早い","記憶力が高い"],                                       matchBoost:1.20 },
+  // ── 打楽器: リズム感＋筋力 ──
+  "打楽器（ドラム／太鼓）":{ soshitsu:["リズム感が良い","筋力が強い"],                                       matchBoost:1.25 },
+  "打楽器（ドラム/太鼓）":{ soshitsu:["リズム感が良い","筋力が強い"],                                       matchBoost:1.25 },
+  "打楽器":              { soshitsu:["リズム感が良い","筋力が強い"],                                          matchBoost:1.25 },
+  // ── ディベート: 論理思考＋言語 ──
+  "ディベート":          { soshitsu:["論理思考が強い","言語発達が早い"],                                       matchBoost:1.25 },
+  // ── 話芸（落語・漫才・コント）: 言語発達が早い → 最高優先（Tier1相当） ──
+  "落語／講談":          { soshitsu:["言語発達が早い","記憶力が高い","理解力が高い"],                         matchBoost:1.40 },
+  "落語・講談":          { soshitsu:["言語発達が早い","記憶力が高い","理解力が高い"],                         matchBoost:1.40 },
+  "漫才・コント":        { soshitsu:["言語発達が早い","理解力が高い","知的好奇心が旺盛"],                     matchBoost:1.35 },
+  "落語／漫才／コント":  { soshitsu:["言語発達が早い","記憶力が高い","理解力が高い"],                         matchBoost:1.38 },
+  // ── サッカー・野球・陸上 ──
+  "サッカー":            { soshitsu:["足が速い","瞬発力がある","持久力がある"],                               matchBoost:1.20 },
+  "野球・ソフト":        { soshitsu:["足が速い","瞬発力がある","手が大きい"],                                 matchBoost:1.20 },
+  "陸上":                { soshitsu:["足が速い","瞬発力がある","持久力がある"],                               matchBoost:1.20 },
+  "バレーボール":        { soshitsu:["背が高い","手が大きい","瞬発力がある"],                                 matchBoost:1.25 },
+  // ── 協調競技（共感者気質 × チームワーク・協力型） ──
+  "チアダンス":               { soshitsu:["競争より仲間と一緒に達成することが好き（協調志向）","リズム感が良い","身体が柔軟","スタイルが良い"], matchBoost:1.45 },
+  "アーティスティックスイミング":{ soshitsu:["競争より仲間と一緒に達成することが好き（協調志向）","身体が柔軟","バランス感覚が良い","持久力がある"], matchBoost:1.40 },
+  "チームダンス（発表会）":    { soshitsu:["競争より仲間と一緒に達成することが好き（協調志向）","リズム感が良い","身体が柔軟"], matchBoost:1.40 },
+  "吹奏楽・マーチング":        { soshitsu:["競争より仲間と一緒に達成することが好き（協調志向）","リズム感が良い","記憶力が高い"], matchBoost:1.35 },
+  "新体操（団体）":            { soshitsu:["競争より仲間と一緒に達成することが好き（協調志向）","身体が柔軟","バランス感覚が良い","スタイルが良い"], matchBoost:1.35 },
+  "合唱・コーラス":            { soshitsu:["競争より仲間と一緒に達成することが好き（協調志向）","言語発達が早い","記憶力が高い"], matchBoost:1.30 },
+  "リレー（陸上）":            { soshitsu:["競争より仲間と一緒に達成することが好き（協調志向）","足が速い","瞬発力がある"], matchBoost:1.30 },
+  "ボート競技（エイト）":      { soshitsu:["競争より仲間と一緒に達成することが好き（協調志向）","筋力が強い","持久力がある"], matchBoost:1.25 },
+  // ── 採点競技（パフォーマー気質 × 表現力・身体能力） ──
+  "チアダンス":          { soshitsu:["リズム感が良い","身体が柔軟","スタイルが良い","容姿端麗","バランス感覚が良い"], matchBoost:1.35 },
+  "バトントワリング":    { soshitsu:["手先が器用","リズム感が良い","身体が柔軟","バランス感覚が良い"],             matchBoost:1.30 },
+  "バレエ（コンクール）":{ soshitsu:["手足が長い","首が長い","身体が柔軟","スタイルが良い","容姿端麗","骨格が細い"], matchBoost:1.40 },
+  "アーティスティックスイミング":{ soshitsu:["身体が柔軟","バランス感覚が良い","持久力がある","スタイルが良い"], matchBoost:1.25 },
+  "チアリーディング（演技審査）":{ soshitsu:["リズム感が良い","身体が柔軟","スタイルが良い","筋力が強い"],       matchBoost:1.30 },
+  // ── タイム競技（商人気質×成果重視×自己競争）──
+  "スピードスケート":         { soshitsu:["タイムや数字で成長を確認したい（成果重視）","昨日の自分を超えることに燃える（自己競争）","身体が柔軟","筋力が強い","瞬発力がある"], matchBoost:1.20 },
+  "陸上（短距離・ハードル）": { soshitsu:["足が速い","瞬発力がある","タイムや数字で成長を確認したい（成果重視）","昨日の自分を超えることに燃える（自己競争）","論理思考が強い"], matchBoost:1.25 },
+  "競泳（タイムトライアル）": { soshitsu:["肩幅が広い","指が長い","筋力が強い","持久力がある","タイムや数字で成長を確認したい（成果重視）","昨日の自分を超えることに燃える（自己競争）"], matchBoost:1.22 },
+  "アルペンスキー":           { soshitsu:["バランス感覚が良い","瞬発力がある","タイムや数字で成長を確認したい（成果重視）","論理思考が強い"], matchBoost:1.10 },
+  "カヤック・ボート競技":     { soshitsu:["筋力が強い","持久力がある","肩幅が広い","タイムや数字で成長を確認したい（成果重視）"], matchBoost:1.12 },
+  "自転車競技（トラック）":   { soshitsu:["持久力がある","筋力が強い","論理思考が強い","タイムや数字で成長を確認したい（成果重視）","昨日の自分を超えることに燃える（自己競争）"], matchBoost:1.15 }
+};
+
+// ── スコア正規化ヘルパー ──────────────────────────────────────────────
+// 才能スコア(0〜16)を0〜100に正規化し、スポーツ基本スコアも同スケールで比較
+function normalizeTalent(raw){ return Math.round((raw/16)*100); }
+
 function showBest3(){
-  var tSc=resultState.tSc,aSc=resultState.aSc,top1Trait=resultState.top1Trait,top2Trait=resultState.top2Trait;
-  var candidates=[];
-  var ct1=traitInfo[top1Trait].competitionTypes,ct2=traitInfo[top2Trait].competitionTypes;
-  var allCts=ct1.concat(ct2).filter(function(v,i,a){return a.indexOf(v)===i;});
-  allCts.forEach(function(ct){((competitionSports[ct]||{sports:[]}).sports).forEach(function(s,i){candidates.push({name:s.name,icon:s.icon,type:'sports',compLabel:ct,score:i===0?10:7,reason:ct+'のおすすめ競技'});});});
-  var nonSportTalents=talentOrder.slice().sort(function(a,b){return aSc[b]-aSc[a];}).filter(function(t){return t!=='運動';}).slice(0,2);
-  nonSportTalents.forEach(function(talent){var hobbies=[];var h1=(chart[top1Trait][talent]||[]).slice(0,3);var h2=(chart[top2Trait][talent]||[]).slice(0,2);h1.concat(h2).forEach(function(h){if(hobbies.indexOf(h)<0)hobbies.push(h);});hobbies.forEach(function(h,hi){candidates.push({name:h,icon:talentInfo[talent].emoji,type:'hobby',talentLabel:talentInfo[talent].label,score:hi===0?9:6,reason:talentInfo[talent].label+'から選出'});});});
-  selectedSoshitsu.forEach(function(s){var hints=soshitsuHints[s]||[];hints.forEach(function(h){candidates.forEach(function(c){if(c.name.indexOf(h)>=0||h.indexOf(c.name.split('（')[0])>=0)c.score+=3;});});});
-  var seen=[],sorted=candidates.filter(function(c){if(seen.indexOf(c.name)>=0)return false;seen.push(c.name);return true;}).sort(function(a,b){return b.score-a.score;});
-  var sports=sorted.filter(function(c){return c.type==='sports';}),hobbies=sorted.filter(function(c){return c.type==='hobby';}),best3=[];
-  if(sports.length>0)best3.push(sports[0]);if(hobbies.length>0)best3.push(hobbies[0]);if(hobbies.length>1)best3.push(hobbies[1]);else if(sports.length>1)best3.push(sports[1]);
-  var rankClass=['rank1','rank2','rank3'],rankNum=['1','2','3'],rankClass2=['r1','r2','r3'];
-  document.getElementById('best3List').innerHTML=best3.slice(0,3).map(function(c,i){return'<div class="best3-item '+rankClass[i]+'"><div class="best3-rank '+rankClass2[i]+'">'+rankNum[i]+'</div><div class="best3-icon">'+c.icon+'</div><div class="best3-info"><div class="best3-name">'+(c.name.length>20?c.name.substring(0,20)+'…':c.name)+'</div><div class="best3-reason">'+c.reason+(selectedSoshitsu.length>0?' ／ 素質マッチ考慮済み':'')+'</div></div><span class="best3-category '+(c.type==='sports'?'sports':'hobby')+'">'+(c.type==='sports'?'スポーツ':'習い事')+'</span></div>';}).join('');
-  document.getElementById('best3Sub').textContent=selectedSoshitsu.length>0?'素質「'+selectedSoshitsu.slice(0,3).join('・')+'」を考慮して優先順位を決定しました':'気質×才能の組み合わせから優先順位を決定しました';
+  var tSc=resultState.tSc,aSc=resultState.aSc;
+  var top1Trait = resultState.top1Trait;
+  var top2Trait = traitOrder.slice().sort(function(a,b){return tSc[b]-tSc[a];}).filter(function(t){return t!==top1Trait;})[0];
+  var ti1=getTraitInfo(top1Trait,tSc), ti2=getTraitInfo(top2Trait,tSc);
+
+  // ══════════════════════════════════════════════════════════════
+  // ステップ①：気質アンカースポーツの確定（固定2枠）
+  //   主気質の competitionTypes[0] の star スポーツ → anchor1
+  //   副気質の competitionTypes[0] の star スポーツ → anchor2
+  //   ただし anchor1 と anchor2 が同じ種目の場合は副気質の次候補を使用
+  // ══════════════════════════════════════════════════════════════
+  function pickAnchorSport(compTypes, excludeName){
+    for(var ci=0;ci<compTypes.length;ci++){
+      var ct=compTypes[ci];
+      var sports=((competitionSports[ct]||{sports:[]}).sports);
+      // star付きを優先、なければ先頭
+      var starred=sports.filter(function(s){return s.star;});
+      var pool=starred.length>0?starred:sports;
+      for(var si=0;si<pool.length;si++){
+        if(pool[si].name!==excludeName) return {name:pool[si].name,icon:pool[si].icon,compLabel:ct};
+      }
+    }
+    return null;
+  }
+  var ct1=ti1.competitionTypes, ct2=ti2.competitionTypes;
+  var anc1=pickAnchorSport(ct1,null);
+  var anc2=pickAnchorSport(ct2, anc1?anc1.name:null);
+
+  // ── ベーススコア: 主気質=100pt、副気質=80pt（仕様書通り）──
+  var score1=100, score2=80;
+  var matched1=[], matched2=[];
+
+  // ══════════════════════════════════════════════════════════════
+  // ステップ②：素質チェック → アンカー2種目への加点マッピングテーブル
+  //   各素質が「水泳 vs テニス（例）」にどう親和するかを定義
+  //   形式: soshitsu名 → {アンカー1への加点, アンカー2への加点, 理由}
+  //   ※ アンカー名を動的に解決するため、各スポーツの特性タグで判定
+  // ══════════════════════════════════════════════════════════════
+
+  // スポーツ特性タグ定義（各スポーツが持つ特性）
+  var sportTraits={
+    "水泳":        ["持久力","全身筋力","リズム","個人","タイム","水中","肩幅","有酸素"],
+    "テニス":      ["瞬発力","反射","ガチ競争","個人","タイム","戦略","筋力","道具"],
+    "陸上":        ["瞬発力","持久力","個人","タイム","足の速さ","有酸素"],
+    "サッカー":    ["瞬発力","集団","足の速さ","持久力","チームワーク"],
+    "バスケ":      ["瞬発力","集団","身長","チームワーク","筋力"],
+    "体操":        ["柔軟性","バランス","筋力","個人","表現","採点"],
+    "バレエ":      ["柔軟性","表現","個人","採点","リズム","バランス"],
+    "フィギュアスケート":["柔軟性","表現","採点","バランス","リズム"],
+    "新体操":      ["柔軟性","表現","採点","バランス","リズム","器具"],
+    "柔道・空手":  ["筋力","瞬発力","ガチ競争","個人","精神力"],
+    "剣道":        ["瞬発力","ガチ競争","個人","精神力","集中"],
+    "卓球":        ["瞬発力","反射","ガチ競争","個人","戦略"],
+    "バドミントン":["瞬発力","反射","ガチ競争","個人","持久力"],
+    "ゴルフ":      ["集中","戦略","個人","道具"],
+    "アーチェリー":["集中","個人","精神力"],
+    "チアダンス":  ["リズム","表現","集団","柔軟性","チームワーク"],
+    "バレーボール":["集団","瞬発力","チームワーク","筋力"],
+    "野球・ソフト":["集団","瞬発力","チームワーク","戦略"],
+    "ラグビー":    ["集団","筋力","瞬発力","チームワーク"],
+    "ボート・カヌー":["持久力","全身筋力","有酸素","個人"],
+    "スキー・スノーボード":["バランス","瞬発力","個人","タイム"],
+    "スピードスケート":["持久力","瞬発力","タイム","個人"]
+  };
+
+  // 素質→スポーツ特性の親和度テーブル
+  // 各素質が「どの特性を持つスポーツに」何点加算するかを定義
+  var soshitsuToTraitBonus={
+    // ── 外見的素質 ──
+    "背が高い":        {"バレーボール":20,"バスケ":20,"水泳":12,"テニス":10},
+    "身体が大きい":    {"ラグビー":18,"柔道・空手":15,"水泳":10,"テニス":8},
+    "手足が長い":      {"水泳":25,"バレエ":20,"テニス":12},
+    "首が長い":        {"バレエ":15},
+    "スタイルが良い":  {"バレエ":12,"フィギュアスケート":12,"新体操":10},
+    "容姿端麗":        {"バレエ":10,"フィギュアスケート":8},
+    "手が大きい":      {"バスケ":15,"水泳":10,"テニス":14},
+    "指が長い":        {"テニス":10,"水泳":5},
+    "骨太・がっちり":  {"柔道・空手":18,"ラグビー":15,"水泳":8,"テニス":10},
+    "肩幅が広い":      {"水泳":28,"テニス":14,"ラグビー":10},
+    "筋肉質":          {"水泳":15,"テニス":16,"柔道・空手":15},
+    "骨格が細い":      {"バレエ":12,"フィギュアスケート":10},
+    "肌がきれい":      {"バレエ":5},
+    // ── 身体的素質 ──
+    "運動神経が良い":  {"テニス":20,"水泳":18,"サッカー":15},
+    "足が速い":        {"サッカー":25,"陸上":30,"テニス":18,"水泳":5},
+    "すばしっこい":    {"テニス":22,"卓球":20,"バドミントン":20,"水泳":5},
+    "瞬発力がある":    {"テニス":28,"卓球":25,"バドミントン":20,"水泳":8},
+    "筋力が強い":      {"水泳":18,"テニス":20,"柔道・空手":20,"ラグビー":18},
+    "持久力がある":    {"水泳":25,"陸上":20,"ボート・カヌー":20,"テニス":16},
+    "手先が器用":      {"テニス":10,"体操":10,"水泳":3},
+    "身体が柔軟":      {"体操":25,"バレエ":25,"新体操":25,"フィギュアスケート":20,"水泳":8,"テニス":8},
+    "バランス感覚が良い":{"体操":20,"フィギュアスケート":18,"スキー・スノーボード":18,"水泳":10,"テニス":12},
+    "リズム感が良い":  {"バレエ":18,"チームダンス（発表会）":20,"新体操":15,"水泳":8,"チアダンス":5},
+    // ── 知的素質 ──
+    "記憶力が高い":    {"テニス":8,"水泳":5},
+    "集中力が高い":    {"水泳":15,"テニス":15,"アーチェリー":20},
+    "理解力が高い":    {"テニス":10,"水泳":8},
+    "言語発達が早い":  {},
+    "数字への興味が強い":{"水泳":12,"テニス":10},
+    "計算が早い":      {"テニス":8,"水泳":6},
+    "パズルが得意":    {"テニス":10,"水泳":5},
+    "空間認識力が高い":{"テニス":15,"水泳":8},
+    "論理思考が強い":  {"テニス":15,"水泳":10},
+    "知的好奇心が旺盛":{"テニス":8,"水泳":5},
+    "タイムや数字で成長を確認したい（成果重視）":{"水泳":20,"テニス":18},
+    "昨日の自分を超えることに燃える（自己競争）":{"水泳":18,"テニス":15},
+    "競争より仲間と一緒に達成することが好き（協調志向）":{"サッカー":20,"チームダンス（発表会）":22,"バレーボール":18,"水泳":5,"チアダンス":5,"テニス":-5}
+  };
+
+  // アンカースポーツへの素質ボーナスを計算する関数
+  // anchorName に対し、soshitsuToTraitBonus の直接マッピング → スポーツ特性経由の親和度 の両方で加点
+  function calcSoshitsuBonus(anchorName, soshitsuList){
+    var bonus=0;
+    var reasons=[];
+    soshitsuList.forEach(function(s){
+      // ① 直接マッピング
+      var directMap=soshitsuToTraitBonus[s]||{};
+      var directVal=null, directFound=false;
+      Object.keys(directMap).forEach(function(k){
+        if(!directFound&&(anchorName===k||anchorName.indexOf(k)===0||k.indexOf(anchorName.split('（')[0])===0)){
+          directVal=directMap[k]; directFound=true;
+        }
+      });
+      if(directFound){
+        if(directVal!==0) bonus+=directVal;
+        if(directVal>0) reasons.push(s);
+        return;
+      }
+      // ② soshitsuHints 経由の間接マッチ
+      var hints=soshitsuHints[s]||[];
+      var hintMatch=hints.some(function(h){
+        return anchorName===h||anchorName.indexOf(h)===0||h.indexOf(anchorName.split('（')[0])===0;
+      });
+      if(hintMatch){bonus+=12;reasons.push(s);}
+    });
+    return {bonus:bonus, reasons:reasons};
+  }
+
+  // アンカー1・2それぞれへの素質加点を計算
+  if(anc1){
+    var r1=calcSoshitsuBonus(anc1.name, selectedSoshitsu);
+    score1+=r1.bonus; matched1=r1.reasons;
+  }
+  if(anc2){
+    var r2=calcSoshitsuBonus(anc2.name, selectedSoshitsu);
+    score2+=r2.bonus; matched2=r2.reasons;
+  }
+
+  // ══════════════════════════════════════════════════════════════
+  // ステップ②-B：天才気質 / 研究者気質 × 運動能力素質フラグ
+  //   運動能力素質（運動神経が良い・足が速い・すばしっこい・瞬発力がある・持久力がある）
+  //   が3つ以上選択された場合、主気質スポーツ(anc1)を個人スポーツに差し替える
+  //
+  //   天才気質（精神耐性_低）: 水泳・ゴルフ・陸上を優先候補とする
+  //   研究者気質（誠実性/開放性）: テニス・卓球・水泳・ゴルフ・陸上を優先候補とする
+  // ══════════════════════════════════════════════════════════════
+  (function(){
+    // 現時点での主気質を判定
+    var curTop1IsTensai = (top1Trait==='精神耐性') && isTensaiJudge(tSc);
+    var curTop1IsKenkyu = (top1Trait==='誠実性') || (top1Trait==='開放性');
+    if(!curTop1IsTensai && !curTop1IsKenkyu) return; // 対象気質でなければスキップ
+
+    // 運動能力素質カウント
+    var undoSoshitsu = ['運動神経が良い','足が速い','すばしっこい','瞬発力がある','持久力がある'];
+    var undoCount = selectedSoshitsu.filter(function(s){ return undoSoshitsu.indexOf(s)>=0; }).length;
+    if(undoCount < 3) return; // 3つ未満はスキップ
+
+    // 気質別の個人スポーツ優先リスト（先頭ほど優先）
+    var kojinSports = curTop1IsTensai
+      ? ['水泳','陸上','ゴルフ','アーチェリー','ボート・カヌー','スキー・スノーボード']      // 天才気質
+      : ['テニス','卓球','水泳','陸上','ゴルフ','バドミントン','アーチェリー'];               // 研究者気質
+
+    // 現在のanc1が既に個人スポーツリストに含まれている場合は差し替え不要
+    var currentAnc1InList = anc1 && kojinSports.some(function(sp){ return anc1.name.indexOf(sp)===0||sp.indexOf(anc1.name)===0; });
+    if(currentAnc1InList) return;
+
+    // 優先リストから最初にマッチするスポーツを探す（competitionSportsから）
+    var newAnc1 = null;
+    for(var ki=0; ki<kojinSports.length; ki++){
+      var target = kojinSports[ki];
+      // competitionSports全種目から名前マッチで探す
+      var found = null;
+      Object.keys(competitionSports).forEach(function(ct){
+        if(found) return;
+        (competitionSports[ct].sports||[]).forEach(function(sp){
+          if(!found && (sp.name===target || sp.name.indexOf(target)===0 || target.indexOf(sp.name)===0)){
+            found = {name:sp.name, icon:sp.icon, compLabel:ct};
+          }
+        });
+      });
+      if(found && (!anc2 || found.name!==anc2.name)){
+        newAnc1 = found;
+        break;
+      }
+    }
+
+    if(!newAnc1) return; // 差し替え先が見つからない場合はそのまま
+
+    // anc1を個人スポーツに差し替え、スコア・理由も更新
+    anc1 = newAnc1;
+    var r1new = calcSoshitsuBonus(anc1.name, selectedSoshitsu);
+    score1 = 100 + r1new.bonus;
+    matched1 = r1new.reasons.concat(['運動能力素質×個人スポーツ']);
+  })();
+
+  // ── 主気質アンカー保護キャップ ──
+  // 素質ボーナスによって副気質アンカーが主気質アンカーを上回ることを防ぐ
+  // 例：商人気質(テニス100pt)が水泳素質で水泳(80pt)に逆転されるケースを防止
+  // 副気質スコアは「主気質スコア - 1」を上限とする
+  if(score2 >= score1) score2 = score1 - 1;
+
+  // 同点の場合は主気質を優先（score1 を +1）― 上記キャップで同点は起きないが念のため
+  if(score1===score2) score1+=1;
+
+  // ══════════════════════════════════════════════════════════════
+  // ステップ③：スポーツ以外の習い事候補（気質×才能チャートから）
+  //   ・主才能トップ1・2 の習い事から各2件
+  //   ・副才能トップ1・2 の習い事から各2件
+  //   → 合計最大8件候補 → スコアで並べて上位4件を hobby 枠とする
+  // ══════════════════════════════════════════════════════════════
+  var undoNorm=normalizeTalent(aSc['運動']||0);
+  var isShonin=(top1Trait==='誠実性')||(top2Trait==='誠実性')||
+               (top1Trait==='精神耐性'&&!isTensaiJudge(tSc))||
+               (top2Trait==='精神耐性'&&!isTensaiJudge(tSc));
+  var compSub=subAnswers[1]||0,soloSub=subAnswers[0]||0;
+  if(compSub>=3&&soloSub<=2&&!isShonin)isShonin=true;
+  var physicalSoshitsu=["筋力が強い","骨太・がっちり","肩幅が広い","身体が大きい","筋肉質","持久力がある","瞬発力がある","運動神経が良い","足が速い"];
+  var hasPhysical=selectedSoshitsu.some(function(s){return physicalSoshitsu.indexOf(s)>=0;});
+  var isTensaiTrait=false;
+  if(top1Trait==="精神耐性"||top2Trait==="精神耐性"){var sh_=tSc["精神耐性"]||0,ga_=tSc["外向性"]||0,ky_=tSc["協調性"]||0;isTensaiTrait=sh_<=4||(sh_<=5&&ga_<=2&&ky_<=3);}
+  var isKyocho=(top1Trait==="協調性")||(top2Trait==="協調性");
+
+  // ── 才能スコア降順で全才能をソート（運動除く）──
+  var allNonSportTalentsSorted = talentOrder.slice().sort(function(a,b){return aSc[b]-aSc[a];}).filter(function(t){return t!=='運動';});
+  var mainTalent1 = allNonSportTalentsSorted[0] || null;
+  var mainTalent2 = allNonSportTalentsSorted[1] || null;
+  var subTalent1  = allNonSportTalentsSorted[2] || null;
+  var subTalent2  = allNonSportTalentsSorted[3] || null;
+
+  // 才能ごとに習い事候補を生成するヘルパー
+  function buildHobbyCandidatesForTalent(talent, labelSuffix){
+    if(!talent) return [];
+    var talentNorm=normalizeTalent(aSc[talent]||0);
+    var hobbyMax=(isShonin&&hasPhysical)?55:75;
+    var hobbyBase=Math.min(hobbyMax,32+Math.round(talentNorm*0.43));
+    var hobbies=[];
+    var h1=(chart[getChartKey(top1Trait,tSc)][talent]||[]).slice(0,6);
+    var h2=(chart[getChartKey(top2Trait,tSc)][talent]||[]).slice(0,5);
+    h1.concat(h2).forEach(function(h){if(hobbies.indexOf(h)<0)hobbies.push(h);});
+    var results=[];
+    hobbies.forEach(function(h,hi){
+      var hScore=hobbyBase-hi*2;
+      var hMatched=[];
+      selectedSoshitsu.forEach(function(s){
+        var hints=soshitsuHints[s]||[];
+        hints.forEach(function(hint){if(h.indexOf(hint)>=0||hint.indexOf(h.split('（')[0])>=0){hScore+=8;if(hMatched.indexOf(s)<0)hMatched.push(s);}});
+      });
+      var tensaiBoostH=["プログラミング","ロボット制作","将棋","囲碁","チェス","そろばん／暗算","鍵盤楽器（ピアノ／オルガン）","弦楽器（バイオリン／チェロ）","絵画／造形／漫画","作文／小説／俳句","科学オリンピック","算数オリンピック"];
+      if(isTensaiTrait&&tensaiBoostH.indexOf(h)>=0)hScore=Math.round(hScore*1.20);
+      var hasLangSoshitsu=selectedSoshitsu.indexOf("言語発達が早い")>=0;
+      var isPerformerLang=((top1Trait==='外向性')||(top2Trait==='外向性'))&&(aSc['言語']||0)>=8;
+      var wageiNames=["落語／講談","落語・講談","漫才・コント","落語／漫才／コント","ディベート","演劇・ドラマ","演劇／ドラマ","演劇（ミュージカル）","ミュージカル／演劇","演劇","スピーチ／弁論","英会話／英語スピーチ","タレント活動"];
+      if((hasLangSoshitsu||isPerformerLang)&&wageiNames.indexOf(h)>=0){
+        var wb=isPerformerLang&&hasLangSoshitsu?1.35:(isPerformerLang?1.25:1.20);
+        hScore=Math.round(hScore*wb);
+      }
+      var isPerformerTrait_=( top1Trait==='外向性')||(top2Trait==='外向性');
+      var langScoreNow=aSc['言語']||0;
+      if(isPerformerTrait_&&langScoreNow>=8){
+        var stagePerformNames=["演劇（ミュージカル）","ミュージカル／演劇","演劇・ドラマ","演劇／ドラマ","演劇","タレント活動","スピーチ／弁論","英会話／英語スピーチ"];
+        if(stagePerformNames.indexOf(h)>=0){
+          var langBoostRate=langScoreNow>=12?1.60:langScoreNow>=10?1.50:1.40;
+          hScore=Math.round(hScore*langBoostRate)+40;
+          if(hMatched.indexOf('言語×舞台演劇ブースト')<0)hMatched.push('言語×舞台演劇ブースト');
+        }
+      }
+      var isPerformerTrait_art=(top1Trait==='外向性')||(top2Trait==='外向性');
+      var artScoreNow=aSc['アート']||0;
+      if(isPerformerTrait_art&&artScoreNow>=8){
+        var stagePerformNamesArt=['ミュージカル／演劇','演劇（ミュージカル）','演劇・ドラマ','演劇／ドラマ','演劇','タレント活動','バレエ／チームダンス','よさこい','子ども神楽'];
+        if(stagePerformNamesArt.indexOf(h)>=0){
+          var artBoostRate=artScoreNow>=12?1.60:artScoreNow>=10?1.50:1.40;
+          hScore=Math.round(hScore*artBoostRate)+40;
+          if(hMatched.indexOf('ごっこ遊び×舞台演劇ブースト')<0)hMatched.push('ごっこ遊び×舞台演劇ブースト');
+        }
+      }
+      var isPerformerTrait=(top1Trait==='外向性')||(top2Trait==='外向性');
+      var hasYoshi=selectedSoshitsu.indexOf('容姿端麗')>=0;
+      var hasStyle=selectedSoshitsu.indexOf('スタイルが良い')>=0;
+      var hasMe=selectedSoshitsu.indexOf('目が大きい')>=0;
+      var hasKao=selectedSoshitsu.indexOf('顔が小さい')>=0;
+      var visualFlag=hasYoshi||(hasStyle&&(hasMe||hasKao));
+      if(isPerformerTrait&&visualFlag){
+        var visualMatchCount=(hasYoshi?1:0)+(hasStyle?1:0)+(hasMe?1:0)+(hasKao?1:0);
+        var visualBonus=visualMatchCount>=3?60:visualMatchCount>=2?30:0;
+        var stageTier1=["ミュージカル／演劇","演劇（ミュージカル）","演劇・ドラマ","演劇／ドラマ","演劇","タレント活動"];
+        var stageTier2=["バレエ\/チームダンス","バレエ","バレエ\/ダンス","ダンス","チームダンス","ストリートダンス","ヒップホップダンス","フィギュアスケート","チアダンス","チアリーディング","新体操","よさこい","子ども神楽"];
+        var instrumentNames=["楽器全般（集団で行うもの）","合唱\/コーラス","リトミック","マーチングバンド","ブラスバンド","ロックバンド\/ジャズバンド","鍵盤楽器（ピアノ\/オルガン）","弦楽器（バイオリン\/チェロ）","管楽器（フルート\/トランペット）","打楽器","声楽・歌"];
+        if(stageTier1.indexOf(h)>=0){
+          hScore=Math.round(hScore*2.0)+80+visualBonus;
+          if(hMatched.indexOf('容姿端麗×舞台演劇ブースト')<0)hMatched.push('容姿端麗×舞台演劇ブースト');
+        }else if(stageTier2.indexOf(h)>=0){
+          hScore=Math.round(hScore*1.5)+50;
+          if(hMatched.indexOf('容姿端麗×ダンス系ブースト')<0)hMatched.push('容姿端麗×ダンス系ブースト');
+        }
+      }
+      results.push({name:h,icon:talentInfo[talent].emoji,type:'hobby',talentLabel:talentInfo[talent].label+labelSuffix,score:hScore,soshitsuMatched:hMatched});
+    });
+    return results;
+  }
+
+  // 各才能から候補を収集（主才能1・2 各上位2件、副才能1・2 各上位2件）
+  var hobbyCandidates=[];
+  [
+    {talent:mainTalent1,label:'（主才能1位）',take:2},
+    {talent:mainTalent2,label:'（主才能2位）',take:2},
+    {talent:subTalent1, label:'（副才能1位）',take:2},
+    {talent:subTalent2, label:'（副才能2位）',take:2}
+  ].forEach(function(cfg){
+    if(!cfg.talent)return;
+    var cands=buildHobbyCandidatesForTalent(cfg.talent,cfg.label);
+    cands.sort(function(a,b){return b.score-a.score;});
+    cands.slice(0,cfg.take).forEach(function(c){hobbyCandidates.push(c);});
+  });
+
+  // 重複除去してスコア降順ソート
+  // ミュージカル・演劇系の名前を正規化して同一グループとして扱う
+  function normalizeHobbyName(name){
+    if(['ミュージカル／演劇','演劇（ミュージカル）','演劇・ドラマ','演劇／ドラマ'].some(function(k){return name.indexOf(k)>=0||k.indexOf(name)>=0;})) return '__musical_drama__';
+    return name;
+  }
+  var seenH=[],sortedHobbies=hobbyCandidates.filter(function(c){var key=normalizeHobbyName(c.name);if(seenH.indexOf(key)>=0)return false;seenH.push(key);return true;}).sort(function(a,b){return b.score-a.score;});
+
+  // ══════════════════════════════════════════════════════════════
+  // ステップ④：最終ランキング構築
+  //   ・スポーツ枠：主気質トップ1スポーツ + 副気質トップ1スポーツ（計2枠）
+  //   ・習い事枠：sortedHobbies 上位4件（計4枠）
+  //   → 6候補を並べた後、素質フラグで優先順位を変更してベスト3を決定
+  // ══════════════════════════════════════════════════════════════
+  var sportRanked=[];
+  if(anc1&&anc2){
+    if(score1>=score2){
+      sportRanked.push({name:anc1.name,icon:anc1.icon,type:'sports',compLabel:anc1.compLabel,score:score1,soshitsuMatched:matched1,traitRank:'主気質'});
+      sportRanked.push({name:anc2.name,icon:anc2.icon,type:'sports',compLabel:anc2.compLabel,score:score2,soshitsuMatched:matched2,traitRank:'副気質'});
+    } else {
+      sportRanked.push({name:anc2.name,icon:anc2.icon,type:'sports',compLabel:anc2.compLabel,score:score2,soshitsuMatched:matched2,traitRank:'副気質（素質で逆転）'});
+      sportRanked.push({name:anc1.name,icon:anc1.icon,type:'sports',compLabel:anc1.compLabel,score:score1,soshitsuMatched:matched1,traitRank:'主気質'});
+    }
+  } else if(anc1){
+    sportRanked.push({name:anc1.name,icon:anc1.icon,type:'sports',compLabel:anc1.compLabel,score:score1,soshitsuMatched:matched1,traitRank:'主気質'});
+  }
+
+  // 6候補：スポーツ2枠 + 習い事4枠（上位）
+  var sixCandidates=sportRanked.slice(0,2).concat(sortedHobbies.slice(0,4));
+
+  // ══════════════════════════════════════════════════════════════
+  // 気質別・素質フラグによる優先順位の変更
+  //
+  // 【商人気質 / パフォーマー気質 / 共感者気質 が主気質の場合】
+  //   → 主気質スポーツ(anc1)を常に1位固定
+  //   → 2位・3位は素質スコアで変動可能
+  //   パフォーマー・共感者気質：外見素質フラグ発動時は舞台演劇を2位に強制配置
+  //
+  // 【天才気質 / 研究者気質 が主気質または副気質の場合】
+  //   フラグ①：知的素質4つ以上 → ボードゲームを1位（スポーツの上）に強制配置
+  //   フラグ②：数理素質2つ以上 → そろばんを2位に強制配置
+  // ══════════════════════════════════════════════════════════════
+
+  // ── 気質判定ヘルパー ──
+  var top1IsTensai=(top1Trait==='精神耐性')&&isTensaiJudge(tSc);
+  var top1IsShonin=(top1Trait==='精神耐性')&&!isTensaiJudge(tSc); // 商人気質
+  var top1IsSeijitsu=(top1Trait==='誠実性');                        // 研究者気質
+  var top1IsKaikoh=(top1Trait==='開放性');                          // 天才気質（開放性）
+  var top1IsGaikou=(top1Trait==='外向性');                          // パフォーマー気質
+  var top1IsKyocho=(top1Trait==='協調性');                          // 共感者気質
+
+  var top2IsTensai=(top2Trait==='精神耐性')&&isTensaiJudge(tSc);
+  var top2IsKenkyu=(top2Trait==='開放性')||(top2Trait==='誠実性');
+
+  // 「主気質スポーツ1位固定」対象気質
+  var isTop1SportFixed = top1IsShonin || top1IsGaikou || top1IsKyocho;
+
+  // 外見素質フラグ（パフォーマー・共感者）
+  var gaiken4 = ['手足が長い','スタイルが良い','容姿端麗','目が大きい'];
+  var hasGaiken4 = selectedSoshitsu.some(function(s){ return gaiken4.indexOf(s)>=0; });
+
+  // 舞台演劇キーワードリスト
+  var butaiKeywords = ['ミュージカル','演劇','ダンス','バレエ','タレント','チアダンス','よさこい','ストリートダンス','ヒップホップ'];
+
+  // デフォルト best3（フラグなし）
+  var best3 = sixCandidates.slice(0,3);
+
+  // ══════════════════════════════════════════════════════════════
+  // ルールA：商人 / パフォーマー / 共感者 → 主気質スポーツを1位固定
+  // ══════════════════════════════════════════════════════════════
+  if(isTop1SportFixed && anc1){
+    var mainSportEntry = {name:anc1.name,icon:anc1.icon,type:'sports',compLabel:anc1.compLabel,score:score1,soshitsuMatched:matched1,traitRank:'主気質（固定）'};
+
+    // anc1 を除いた残り候補でスコア降順に並べる（副気質スポーツ + 習い事）
+    var rest = sixCandidates.filter(function(c){ return c.name!==anc1.name; });
+    rest.sort(function(a,b){ return b.score-a.score; });
+
+    // ルールB（パフォーマー・共感者 × 外見素質）: 舞台演劇を2位に強制
+    if((top1IsGaikou||top1IsKyocho) && hasGaiken4){
+      // rest の中から舞台演劇系を探す
+      var butaiIdx = rest.findIndex(function(c){
+        return butaiKeywords.some(function(kw){ return c.name.indexOf(kw)>=0; });
+      });
+
+      if(butaiIdx>=0){
+        // 見つかった舞台演劇アイテムを2位に移動
+        var butaiItem = rest.splice(butaiIdx,1)[0];
+        butaiItem.soshitsuMatched = butaiItem.soshitsuMatched||[];
+        if(butaiItem.soshitsuMatched.indexOf('外見素質×舞台演劇')<0)
+          butaiItem.soshitsuMatched.unshift('外見素質×舞台演劇');
+        butaiItem.traitRank = (butaiItem.traitRank||'') + '・素質2位固定';
+        rest.unshift(butaiItem);
+      } else {
+        // sortedHobbies からも検索して強制挿入
+        var butaiFallback = sortedHobbies.find(function(c){
+          return butaiKeywords.some(function(kw){ return c.name.indexOf(kw)>=0; });
+        });
+        if(butaiFallback){
+          var bfCopy = JSON.parse(JSON.stringify(butaiFallback));
+          bfCopy.soshitsuMatched = bfCopy.soshitsuMatched||[];
+          if(bfCopy.soshitsuMatched.indexOf('外見素質×舞台演劇')<0)
+            bfCopy.soshitsuMatched.unshift('外見素質×舞台演劇');
+          bfCopy.traitRank = '素質2位固定';
+          rest = rest.filter(function(c){ return c.name!==bfCopy.name; });
+          rest.unshift(bfCopy);
+        }
+      }
+    }
+
+    best3 = [mainSportEntry].concat(rest).slice(0,3);
+  }
+
+  // ══════════════════════════════════════════════════════════════
+  // ルールC：天才気質 / 研究者気質 フラグ（主または副気質）
+  //   ※ ルールAが発動していない場合のみ適用
+  // ══════════════════════════════════════════════════════════════
+  if(!isTop1SportFixed){
+    var isTensaiOrKenkyuTrait = top1IsTensai||top1IsKaikoh||top1IsSeijitsu||top2IsTensai||top2IsKenkyu;
+    if(isTensaiOrKenkyuTrait){
+      var chitekiSoshitsu=["記憶力が高い","集中力が高い","理解力が高い","言語発達が早い","数字への興味が強い","計算が早い","パズルが得意","空間認識力が高い","論理思考が強い","知的好奇心が旺盛","タイムや数字で成長を確認したい（成果重視）","昨日の自分を超えることに燃える（自己競争）","競争より仲間と一緒に達成することが好き（協調志向）"];
+      var selectedChiteki=selectedSoshitsu.filter(function(s){return chitekiSoshitsu.indexOf(s)>=0;});
+      var suriSoshitsu=["数字への興味が強い","計算が早い","パズルが得意","空間認識力が高い","論理思考が強い"];
+      var suriCount=selectedSoshitsu.filter(function(s){return suriSoshitsu.indexOf(s)>=0;}).length;
+      var flag1=selectedChiteki.length>=4;
+      var flag2=suriCount>=2;
+
+      if(flag1||flag2){
+        var workList=sixCandidates.slice();
+        if(flag1){
+          var boardGame={name:'ボードゲーム（将棋・囲碁・チェス）',icon:'♟️',type:'hobby',talentLabel:'STEM的才能（素質強制）',score:9999,soshitsuMatched:['知的素質4つ以上'],traitRank:'素質優先'};
+          workList=workList.filter(function(c){
+            return !['将棋','囲碁','チェス','ボードゲーム（将棋・囲碁・チェスなど）','ボードゲーム（将棋・囲碁・チェス）'].some(function(kw){return c.name.indexOf(kw)>=0;});
+          });
+          workList.unshift(boardGame);
+        }
+        if(flag2){
+          var soroban={name:'そろばん（暗算）',icon:'🧮',type:'hobby',talentLabel:'STEM的才能（素質強制）',score:9998,soshitsuMatched:['数理素質2つ以上'],traitRank:'素質優先'};
+          workList=workList.filter(function(c){
+            return !['そろばん','暗算'].some(function(kw){return c.name.indexOf(kw)>=0;});
+          });
+          workList.splice(1,0,soroban);
+        }
+        best3=workList.slice(0,3);
+      }
+    }
+  }
+
+  // ══════════════════════════════════════════════════════════════
+  // ステップ⑤：UXコピー生成（「上書き」ではなく「深掘り」の説明文）
+  // ══════════════════════════════════════════════════════════════
+  // 素質フラグで順位が変動した場合も正しくスポーツ・習い事を参照できるよう動的に取得
+  var topSport=best3.find(function(c){return c.type==='sports';});
+  var subSport=best3.filter(function(c){return c.type==='sports';})[1]||null;
+  var topHobby=best3.find(function(c){return c.type==='hobby';})||null;
+  var isPerformerTrait2=(top1Trait==='外向性')||(top2Trait==='外向性');
+  var hasYoshi2=selectedSoshitsu.indexOf('容姿端麗')>=0;
+  var uxCopy='';
+  if(topSport&&subSport){
+    var topMatchStr=topSport.soshitsuMatched.length>0?'「'+topSport.soshitsuMatched.slice(0,2).join('・')+'」などの素質':'お子さんの素質';
+    if(score1===score2+1&&matched1.length===0&&matched2.length===0){
+      uxCopy='お子さんの気質は<strong>'+topSport.name+'・'+subSport.name+'タイプ</strong>です。素質チェックでは両者への明確な差は出ませんでしたが、気質診断の強さから<strong>'+topSport.name+'</strong>を第一候補としています。';
+    } else {
+      uxCopy='お子さんの気質は<strong>'+topSport.name+'・'+subSport.name+'タイプ</strong>です。さらに素質チェックを掛け合わせた結果、'+topMatchStr+'が<strong>'+topSport.name+'</strong>の特性により強く作用することがわかりました。現時点では特に<strong>'+topSport.name+'</strong>でその力を最大限に活かせる可能性が高いと出ています。';
+    }
+  } else if(topSport){
+    uxCopy='お子さんの気質・素質を総合すると、<strong>'+topSport.name+'</strong>に最も高い適性が出ています。';
+  }
+  // パフォーマー気質 × 容姿端麗：習い事3位への追記コメント
+  if(isPerformerTrait2&&hasYoshi2&&topHobby){
+    var isStageHobby=['バレエ','ダンス','タレント活動','演劇','ミュージカル','チアダンス','フィギュア','新体操','よさこい'].some(function(kw){return topHobby.name.indexOf(kw)>=0;});
+    if(isStageHobby){
+      uxCopy+='<br><br>🌟 <strong>パフォーマー気質×容姿端麗</strong>の組み合わせから、習い事では<strong>'+topHobby.name+'</strong>が浮上しています。お子さんには舞台上で観客の目を惹きつける「華」があります。個人の音楽センスも素晴らしいものがありますが、集団パフォーマンスの場でこそ、その存在感が主役級の輝きを放つ可能性があります。';
+    }
+  }
+  // パフォーマー気質 × 言語才能が高い（語彙豊富・おしゃべり好き）：舞台演劇コメント
+  var langScoreForCopy = aSc['言語']||0;
+  if(isPerformerTrait2 && langScoreForCopy>=8 && topHobby){
+    var isStageHobbyLang=['演劇','ミュージカル','タレント','スピーチ','弁論','英会話','落語','漫才'].some(function(kw){return topHobby.name.indexOf(kw)>=0;});
+    if(isStageHobbyLang){
+      uxCopy+='<br><br>🎭 <strong>パフォーマー気質×言語才能</strong>の組み合わせが光っています！語彙が豊富で大人とのおしゃべりが得意なお子さんは、言葉と表現の両方が武器になる<strong>'+topHobby.name+'</strong>で大きな才能を発揮できる可能性が高いです。台詞を覚えてステージで輝く、まさに天職かもしれません！';
+    }
+  }
+  // パフォーマー気質 × アート才能が高い（ごっこ遊び・空想遊び・演じるのが好き）：舞台演劇コメント
+  var artScoreForCopy = aSc['アート']||0;
+  if(isPerformerTrait2 && artScoreForCopy>=8 && topHobby){
+    var isStageHobbyArt=['演劇','ミュージカル','タレント','バレエ','よさこい','神楽'].some(function(kw){return topHobby.name.indexOf(kw)>=0;});
+    if(isStageHobbyArt){
+      uxCopy+='<br><br>🎪 <strong>パフォーマー気質×ごっこ遊び・演じる才能</strong>の組み合わせが輝いています！空想の世界でキャラクターを演じることが大好きなお子さんには、その想像力と表現力を思いきり発揮できる<strong>'+topHobby.name+'</strong>が最高の舞台になります。ごっこ遊びの延長線上に、本物の舞台が待っています！';
+    }
+  }
+  // UXコピーをbest3Sectionの上部に差し込む
+  var uxEl=document.getElementById('best3UxCopy');
+  if(uxEl){uxEl.innerHTML=uxCopy;uxEl.style.display=uxCopy?'block':'none';}
+
+  // ── 表示 ──
+  document.getElementById('best3List').innerHTML=best3.slice(0,3).map(function(c,i){
+    var traitLabel=c.traitRank?'🎯 '+c.traitRank:'';
+    var soshitsuLabel=c.soshitsuMatched&&c.soshitsuMatched.length>0?'✨ 素質「'+c.soshitsuMatched.slice(0,2).join('・')+'」で加点':'';
+    var mn='';
+    if(traitLabel)mn+=traitLabel;
+    if(soshitsuLabel)mn+=(mn?' ／ ':'')+soshitsuLabel;
+    if(!mn&&selectedSoshitsu.length>0)mn='素質マッチ考慮済み';
+    var scoreDisp=c.type==='sports'?'（スコア：'+c.score+'pt）':'';
+    return '<div class="best3-card rank'+(i+1)+'"><div class="best3-rank-badge">'+(i+1)+'位</div><div class="best3-icon">'+(c.icon||(c.type==='sports'?'⚽':'🎯'))+'</div><div class="best3-name">'+c.name+scoreDisp+'</div><div class="best3-reason">'+mn+'</div></div>';
+  }).join('');
+
+  document.getElementById('best3Sub').textContent='気質診断（主：'+ti1.name+'／副：'+ti2.name+'）を軸に、素質チェックで深掘りしたお子さん専用ランキング';
+  resultState.selectedSoshitsuSnapshot=selectedSoshitsu.slice();
+  resultState.best3Snapshot=best3.slice(0,3);  // メール詳細で参照するためベスト3を保存
   var b3=document.getElementById('best3Section');b3.style.display='block';b3.scrollIntoView({behavior:'smooth',block:'start'});
 }
-function resetQuiz(){stage=1;currentQ=0;traitAnswers=new Array(10).fill(null);talentAnswers=new Array(20).fill(null);selectedSoshitsu=[];resultState={};document.getElementById('quizContent').classList.remove('hide');document.getElementById('transitionScreen').classList.remove('show');document.getElementById('resultBox').classList.remove('show');document.getElementById('best3Section').style.display='none';var s1c=document.getElementById('s1c');s1c.classList.remove('done');s1c.classList.add('active');s1c.textContent='1';document.getElementById('s1n').classList.add('active');document.getElementById('s2c').classList.remove('active');document.getElementById('s2c').classList.add('pending');document.getElementById('s2n').classList.remove('active');document.getElementById('sl1').classList.remove('done');render();document.getElementById('quiz').scrollIntoView({behavior:'smooth'});}
+function resetQuiz(){stage=1;currentQ=0;traitAnswers=new Array(10).fill(null);talentAnswers=new Array(20).fill(null);subAnswers=new Array(3).fill(null);fixedTop1Trait=null;fixedTop1TraitIsTensai=false;selectedSoshitsu=[];resultState={};document.getElementById('quizContent').classList.remove('hide');document.getElementById('transitionScreen').classList.remove('show');document.getElementById('resultBox').classList.remove('show');document.getElementById('best3Section').style.display='none';var s1c=document.getElementById('s1c');s1c.classList.remove('done');s1c.classList.add('active');s1c.textContent='1';document.getElementById('s1n').classList.add('active');document.getElementById('s2c').classList.remove('active');document.getElementById('s2c').classList.add('pending');document.getElementById('s2n').classList.remove('active');document.getElementById('sl1').classList.remove('done');render();document.getElementById('quiz').scrollIntoView({behavior:'smooth'});}
+
+function buildDetailHtml(rs){
+  var tSc=rs.tSc,aSc=rs.aSc,top1=rs.top1Trait;
+  var ti=getTraitInfo(top1,tSc);
+  var html='';
+
+  // ── ① ベスト3をそのまま最上段に表示（showBest3と完全一致） ──
+  var best3=rs.best3Snapshot||[];
+  if(best3.length>0){
+    html+='<div class="email-detail-card"><div class="detail-title">🏆 わが子の習い事ベスト3</div>';
+    html+='<p style="font-size:12px;color:#5A6A8A;margin-bottom:10px">気質診断×素質チェックで算出したお子さん専用ランキングです。</p>';
+    html+=best3.map(function(c,i){
+      var rankColors=['#FFB347','#5B8FC8','#5A9A5A'];
+      var rankLabel=(i+1)+'位';
+      var traitLabel=c.traitRank?'🎯 '+c.traitRank:'';
+      var soshitsuLabel=c.soshitsuMatched&&c.soshitsuMatched.length>0?'✨ 素質「'+c.soshitsuMatched.slice(0,2).join('・')+'」で加点':'';
+      var reason='';
+      if(traitLabel)reason+=traitLabel;
+      if(soshitsuLabel)reason+=(reason?' ／ ':'')+soshitsuLabel;
+      return '<div style="background:rgba(255,255,255,.75);border-radius:8px;padding:10px 12px;border-left:4px solid '+rankColors[i]+';margin-bottom:8px;display:flex;align-items:center;gap:10px">'
+        +'<div style="font-weight:700;font-size:13px;color:'+rankColors[i]+';min-width:24px">'+rankLabel+'</div>'
+        +'<div style="font-size:20px">'+(c.icon||(c.type==='sports'?'⚽':'🎯'))+'</div>'
+        +'<div><div style="font-size:13px;font-weight:700;color:#2D3E6A">'+c.name+'</div>'
+        +(reason?'<div style="font-size:11px;color:#5A6A8A;margin-top:2px">'+reason+'</div>':'')
+        +'</div></div>';
+    }).join('');
+    html+='</div>';
+  }
+
+  var traitIsShonin=rs.traitIsShonin||top1==='誠実性'||(top1==='精神耐性'&&(tSc['精神耐性']||0)>=5);
+  if(traitIsShonin){
+    var gaikouS=tSc['外向性']||0,stemS=aSc['STEM']||0;
+    var shoninCopy=rs.shoninCopy||(gaikouS>=5&&stemS>=9
+      ?'目標を数値で捉え、論理で戦略を組み立てる「戦略家タイプ」です。データと成果にこだわり、自分を更新し続ける力が最大の武器です。'
+      :'自分の努力を確実に「成果」へと変えられるプロフェッショナル・アスリートタイプです。昨日の自分というライバルを追い越す時、誰にも真似できないスピードが生まれます。');
+    html+='<div class="email-detail-card"><div class="detail-title">🏅 '+ti.name+'×成果主義アスリートタイプ</div><p>'+shoninCopy+'</p></div>';
+  }
+  var langScore=rs.langScore||(aSc['言語']||0);
+  var sortedT=talentOrder.slice().sort(function(a,b){return aSc[b]-aSc[a];});
+  var topIsLang=rs.topTalentIsLang!==undefined?rs.topTalentIsLang:(sortedT[0]==='言語'||sortedT[1]==='言語');
+  if(langScore>=8&&topIsLang){
+    html+='<div class="email-detail-card"><div class="detail-title">🎤 言葉を操る力が光っています！</div>';
+    html+='<p>言葉を操る力が非常に高いお子さんには、<strong>「話芸」</strong>の世界もおすすめです。落語や漫才は、自分の言葉でお客さんを笑わせる最高にクリエイティブな舞台。お子さんの論理思考と記憶力を活かせば、<strong>唯一無二の表現者</strong>になれるはずです！</p>';
+    if(langScore>=12)html+='<p style="margin-top:6px">✨ 言語才能スコアが特に高いです。語学・執筆・弁論・話芸のいずれでも大きな才能を発揮できるでしょう。</p>';
+    var chips2=['落語・講談','漫才・コント','演劇・ドラマ','英会話・英語スピーチ','スピーチ／弁論','ディベート'];
+    html+='<div style="display:flex;flex-wrap:wrap;gap:6px;margin-top:10px">'+chips2.map(function(c){return'<span class="kotoba-chip">'+c+'</span>';}).join('')+'</div></div>';
+  }
+  html+='<div class="email-detail-card"><div class="detail-title">🌟 気質タイプ別アドバイス</div>';
+  html+='<p><strong>'+ti.name+'</strong> — '+ti.desc+'</p>';
+  html+='<p style="margin-top:8px;font-size:12px;color:#5B7FA6">'+ti.sportsMsg+'</p></div>';
+  var modalS=rs.selectedSoshitsuSnapshot||selectedSoshitsu;
+  if(modalS.length>0){
+    var g1s=soshitsuData.g1.filter(function(s){return modalS.indexOf(s)>=0;});
+    var g2s=soshitsuData.g2.filter(function(s){return modalS.indexOf(s)>=0;});
+    var g3s=soshitsuData.g3.filter(function(s){return modalS.indexOf(s)>=0;});
+    html+='<div class="email-detail-card"><div class="detail-title">🌱 選択された素質</div>';
+    if(g1s.length)html+='<p style="margin-bottom:4px"><strong>外見的素質：</strong>'+g1s.join('・')+'</p>';
+    if(g2s.length)html+='<p style="margin-bottom:4px"><strong>身体的素質：</strong>'+g2s.join('・')+'</p>';
+    if(g3s.length)html+='<p><strong>知的素質：</strong>'+g3s.join('・')+'</p>';
+    html+='</div>';
+  }
+  return html;
+}
+function openEmailModal(){
+  var rs=resultState;
+  if(!rs||!rs.tSc)return;
+  var tSc=rs.tSc,aSc=rs.aSc,top1=rs.top1Trait;
+  var ti=getTraitInfo(top1,tSc);
+  var previewHtml='<div class="email-detail-card">';
+  previewHtml+='<div class="detail-title">'+ti.emoji+' '+ti.name+'の詳細診断レポート</div>';
+  previewHtml+='<p style="font-size:13px;color:#444">気質・才能・素質を組み合わせた、お子さん専用の詳細アドバイスです。</p>';
+  previewHtml+='<ul style="font-size:12px;color:#5B7FA6;margin:8px 0 0 16px;line-height:2">';
+  var traitIsShonin=rs.traitIsShonin||top1==='誠実性'||(top1==='精神耐性'&&(tSc['精神耐性']||0)>=5);
+  if(traitIsShonin)previewHtml+='<li>🏆 成果主義アスリートタイプ詳細</li>';
+  var langScore=rs.langScore||(aSc['言語']||0);
+  var sortedT=talentOrder.slice().sort(function(a,b){return aSc[b]-aSc[a];});
+  var topIsLang=rs.topTalentIsLang!==undefined?rs.topTalentIsLang:(sortedT[0]==='言語'||sortedT[1]==='言語');
+  if(langScore>=8&&topIsLang)previewHtml+='<li>🎤 言語才能・話芸アドバイス</li>';
+  previewHtml+='<li>🌟 気質タイプ別子育てアドバイス</li>';
+  if((rs.selectedSoshitsuSnapshot||selectedSoshitsu).length>0)previewHtml+='<li>🌱 素質マッチング詳細</li>';
+  previewHtml+='</ul></div>';
+  document.getElementById('emailPreviewContent').innerHTML=previewHtml;
+  document.getElementById('emailPreviewSection').style.display='block';
+  document.getElementById('emailDetailSection').style.display='none';
+  document.getElementById('emailSentMsg').style.display='none';
+  document.getElementById('emailInput').value='';
+  document.getElementById('emailModalOverlay').classList.add('open');
+}
+function sendEmail(){
+  var email=document.getElementById('emailInput').value.trim();
+  if(!email||!email.includes('@')){alert('正しいメールアドレスを入力してください');return;}
+  // 詳細コンテンツを解除して表示
+  var detailHtml=buildDetailHtml(resultState);
+  document.getElementById('emailDetailContent').innerHTML=detailHtml||'<p style="color:#999;font-size:13px">診断を完了すると詳細情報が表示されます</p>';
+  document.getElementById('emailPreviewSection').style.display='none';
+  document.getElementById('emailDetailSection').style.display='block';
+  document.getElementById('emailSentMsg').style.display='block';
+  document.getElementById('emailInput').value='';
+  resultState.registeredEmail=email;
+}
+function closeEmailModal(e){
+  if(!e||e.target===document.getElementById('emailModalOverlay'))
+    document.getElementById('emailModalOverlay').classList.remove('open');
+}
 render();
 </script>
 </body>
